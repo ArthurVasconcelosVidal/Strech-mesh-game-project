@@ -5,9 +5,10 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour{
 
     public Rigidbody rigidbody;
-    public MovimentMamager movimentMamager;
     public InputManager inputManager;
+    public MovimentMamager movimentMamager;
     public ActionManager actionManager;
+    public GameObject meshObject;
 
 
 }

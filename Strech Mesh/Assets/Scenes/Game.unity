@@ -271,7 +271,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &385411159
 MonoBehaviour:
@@ -297,6 +297,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ab62d9dac189d240badd6d8a8d133ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerManager: {fileID: 385411162}
+  velocity: 5
+  rotationSpeed: 2
 --- !u!114 &385411161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,9 +326,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 385411158}
-  movimentMamager: {fileID: 385411160}
   inputManager: {fileID: 385411161}
+  movimentMamager: {fileID: 385411160}
   actionManager: {fileID: 385411159}
+  meshObject: {fileID: 385411155}
 --- !u!1 &476627718
 GameObject:
   m_ObjectHideFlags: 0
