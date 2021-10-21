@@ -23,7 +23,7 @@ public class MovimentMamager : MonoBehaviour{
     Vector3 RelativeToCamDirection() {
         Vector3 camF = Vector3.ProjectOnPlane(Camera.main.transform.forward, transform.up);
         Vector3 camR = Vector3.ProjectOnPlane(Camera.main.transform.right, transform.up);
-        Vector3 finalDirection = camF * playerManager.inputManager.rightStick.y + camR * playerManager.inputManager.rightStick.x;
+        Vector3 finalDirection = camF * playerManager.inputManager.leftStick.y + camR * playerManager.inputManager.leftStick.x;
         return finalDirection;
     }
 

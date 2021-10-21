@@ -15,13 +15,21 @@ public class @PlayerControl : IInputActionCollection, IDisposable
     ""name"": ""PlayerControl"",
     ""maps"": [
         {
-            ""name"": ""control"",
+            ""name"": ""Control"",
             ""id"": ""a1036ce2-641a-49a6-9b62-596bf1832fa9"",
             ""actions"": [
                 {
-                    ""name"": ""Moviment"",
+                    ""name"": ""LeftStick"",
                     ""type"": ""Value"",
                     ""id"": ""be4b1d7c-727c-40d7-bace-be525591ade2"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""RightStick"",
+                    ""type"": ""Value"",
+                    ""id"": ""9d9cfd6b-a144-46c3-add8-7eea643293da"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -35,7 +43,7 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Moviment"",
+                    ""action"": ""LeftStick"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -46,7 +54,7 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Moviment"",
+                    ""action"": ""LeftStick"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -57,7 +65,7 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Moviment"",
+                    ""action"": ""LeftStick"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -68,7 +76,7 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Moviment"",
+                    ""action"": ""LeftStick"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -79,7 +87,7 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Moviment"",
+                    ""action"": ""LeftStick"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -90,7 +98,73 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Moviment"",
+                    ""action"": ""LeftStick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""752f7dd8-9ead-481c-a697-35de14c61021"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightStick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Setas"",
+                    ""id"": ""dc77addf-3b0f-4584-a81e-23da29e32a76"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightStick"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""2cf20e99-1b47-4df9-aa4a-4b360f851800"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightStick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""71f14790-3190-4e7e-851b-28d0a217a96a"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightStick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""a74c7c6c-96e6-4eb1-b234-898f378ba262"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightStick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""dc0b91dc-f2f8-4199-9b2a-8f9444e11978"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightStick"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 }
@@ -99,9 +173,10 @@ public class @PlayerControl : IInputActionCollection, IDisposable
     ],
     ""controlSchemes"": []
 }");
-        // control
-        m_control = asset.FindActionMap("control", throwIfNotFound: true);
-        m_control_Moviment = m_control.FindAction("Moviment", throwIfNotFound: true);
+        // Control
+        m_Control = asset.FindActionMap("Control", throwIfNotFound: true);
+        m_Control_LeftStick = m_Control.FindAction("LeftStick", throwIfNotFound: true);
+        m_Control_RightStick = m_Control.FindAction("RightStick", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -148,16 +223,18 @@ public class @PlayerControl : IInputActionCollection, IDisposable
         asset.Disable();
     }
 
-    // control
-    private readonly InputActionMap m_control;
+    // Control
+    private readonly InputActionMap m_Control;
     private IControlActions m_ControlActionsCallbackInterface;
-    private readonly InputAction m_control_Moviment;
+    private readonly InputAction m_Control_LeftStick;
+    private readonly InputAction m_Control_RightStick;
     public struct ControlActions
     {
         private @PlayerControl m_Wrapper;
         public ControlActions(@PlayerControl wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Moviment => m_Wrapper.m_control_Moviment;
-        public InputActionMap Get() { return m_Wrapper.m_control; }
+        public InputAction @LeftStick => m_Wrapper.m_Control_LeftStick;
+        public InputAction @RightStick => m_Wrapper.m_Control_RightStick;
+        public InputActionMap Get() { return m_Wrapper.m_Control; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
@@ -166,22 +243,29 @@ public class @PlayerControl : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_ControlActionsCallbackInterface != null)
             {
-                @Moviment.started -= m_Wrapper.m_ControlActionsCallbackInterface.OnMoviment;
-                @Moviment.performed -= m_Wrapper.m_ControlActionsCallbackInterface.OnMoviment;
-                @Moviment.canceled -= m_Wrapper.m_ControlActionsCallbackInterface.OnMoviment;
+                @LeftStick.started -= m_Wrapper.m_ControlActionsCallbackInterface.OnLeftStick;
+                @LeftStick.performed -= m_Wrapper.m_ControlActionsCallbackInterface.OnLeftStick;
+                @LeftStick.canceled -= m_Wrapper.m_ControlActionsCallbackInterface.OnLeftStick;
+                @RightStick.started -= m_Wrapper.m_ControlActionsCallbackInterface.OnRightStick;
+                @RightStick.performed -= m_Wrapper.m_ControlActionsCallbackInterface.OnRightStick;
+                @RightStick.canceled -= m_Wrapper.m_ControlActionsCallbackInterface.OnRightStick;
             }
             m_Wrapper.m_ControlActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Moviment.started += instance.OnMoviment;
-                @Moviment.performed += instance.OnMoviment;
-                @Moviment.canceled += instance.OnMoviment;
+                @LeftStick.started += instance.OnLeftStick;
+                @LeftStick.performed += instance.OnLeftStick;
+                @LeftStick.canceled += instance.OnLeftStick;
+                @RightStick.started += instance.OnRightStick;
+                @RightStick.performed += instance.OnRightStick;
+                @RightStick.canceled += instance.OnRightStick;
             }
         }
     }
-    public ControlActions @control => new ControlActions(this);
+    public ControlActions @Control => new ControlActions(this);
     public interface IControlActions
     {
-        void OnMoviment(InputAction.CallbackContext context);
+        void OnLeftStick(InputAction.CallbackContext context);
+        void OnRightStick(InputAction.CallbackContext context);
     }
 }

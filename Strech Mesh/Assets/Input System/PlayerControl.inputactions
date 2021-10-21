@@ -2,13 +2,21 @@
     "name": "PlayerControl",
     "maps": [
         {
-            "name": "control",
+            "name": "Control",
             "id": "a1036ce2-641a-49a6-9b62-596bf1832fa9",
             "actions": [
                 {
-                    "name": "Moviment",
+                    "name": "LeftStick",
                     "type": "Value",
                     "id": "be4b1d7c-727c-40d7-bace-be525591ade2",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightStick",
+                    "type": "Value",
+                    "id": "9d9cfd6b-a144-46c3-add8-7eea643293da",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
@@ -22,7 +30,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Moviment",
+                    "action": "LeftStick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -33,7 +41,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Moviment",
+                    "action": "LeftStick",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -44,7 +52,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Moviment",
+                    "action": "LeftStick",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -55,7 +63,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Moviment",
+                    "action": "LeftStick",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -66,7 +74,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Moviment",
+                    "action": "LeftStick",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -77,7 +85,73 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Moviment",
+                    "action": "LeftStick",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "752f7dd8-9ead-481c-a697-35de14c61021",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightStick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Setas",
+                    "id": "dc77addf-3b0f-4584-a81e-23da29e32a76",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightStick",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "2cf20e99-1b47-4df9-aa4a-4b360f851800",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightStick",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "71f14790-3190-4e7e-851b-28d0a217a96a",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightStick",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "a74c7c6c-96e6-4eb1-b234-898f378ba262",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightStick",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "dc0b91dc-f2f8-4199-9b2a-8f9444e11978",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightStick",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }

@@ -5,24 +5,33 @@ using UnityEngine;
 public class InputManager : MonoBehaviour{
     PlayerControl playerControl;
     public Vector2 rightStick;
+    public Vector2 leftStick;
 
     void Awake(){
         playerControl = new PlayerControl();
 
-        playerControl.control.Moviment.performed += ctx => {
+        playerControl.Control.LeftStick.performed += ctx => {
+            leftStick = ctx.ReadValue<Vector2>();
+        };
+
+        playerControl.Control.LeftStick.canceled += ctx =>{
+            leftStick = Vector2.zero;
+        };
+
+        playerControl.Control.RightStick.performed += ctx => {
             rightStick = ctx.ReadValue<Vector2>();
         };
 
-        playerControl.control.Moviment.canceled += ctx =>{
+        playerControl.Control.RightStick.canceled += ctx => {
             rightStick = Vector2.zero;
         };
     }
 
     void OnEnable(){
-        playerControl.control.Enable();
+        playerControl.Control.Enable();
     }
 
     void OnDisable(){
-        playerControl.control.Disable();
+        playerControl.Control.Disable();
     }
 }
