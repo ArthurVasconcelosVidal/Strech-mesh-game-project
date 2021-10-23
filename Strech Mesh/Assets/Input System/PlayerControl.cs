@@ -33,6 +33,22 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""LBump"",
+                    ""type"": ""Button"",
+                    ""id"": ""3b8e483f-419b-4c14-8ab0-fb0c3336b72e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""RBump"",
+                    ""type"": ""Button"",
+                    ""id"": ""c5f0223f-8ab2-4eb3-81b4-8b25b3415275"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -167,6 +183,50 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                     ""action"": ""RightStick"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3a1a8a2c-7dca-4478-8dd5-3fd07289644c"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LBump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""be80b3db-8f83-4c8b-85e4-1f906d46eabb"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LBump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0d80d05e-9ce4-4ebc-9e2d-e6bb9e3ac8eb"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RBump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6b6d8eb2-bc0e-4fc2-85f9-a955e7ab63f5"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RBump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -177,6 +237,8 @@ public class @PlayerControl : IInputActionCollection, IDisposable
         m_Control = asset.FindActionMap("Control", throwIfNotFound: true);
         m_Control_LeftStick = m_Control.FindAction("LeftStick", throwIfNotFound: true);
         m_Control_RightStick = m_Control.FindAction("RightStick", throwIfNotFound: true);
+        m_Control_LBump = m_Control.FindAction("LBump", throwIfNotFound: true);
+        m_Control_RBump = m_Control.FindAction("RBump", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -228,12 +290,16 @@ public class @PlayerControl : IInputActionCollection, IDisposable
     private IControlActions m_ControlActionsCallbackInterface;
     private readonly InputAction m_Control_LeftStick;
     private readonly InputAction m_Control_RightStick;
+    private readonly InputAction m_Control_LBump;
+    private readonly InputAction m_Control_RBump;
     public struct ControlActions
     {
         private @PlayerControl m_Wrapper;
         public ControlActions(@PlayerControl wrapper) { m_Wrapper = wrapper; }
         public InputAction @LeftStick => m_Wrapper.m_Control_LeftStick;
         public InputAction @RightStick => m_Wrapper.m_Control_RightStick;
+        public InputAction @LBump => m_Wrapper.m_Control_LBump;
+        public InputAction @RBump => m_Wrapper.m_Control_RBump;
         public InputActionMap Get() { return m_Wrapper.m_Control; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -249,6 +315,12 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                 @RightStick.started -= m_Wrapper.m_ControlActionsCallbackInterface.OnRightStick;
                 @RightStick.performed -= m_Wrapper.m_ControlActionsCallbackInterface.OnRightStick;
                 @RightStick.canceled -= m_Wrapper.m_ControlActionsCallbackInterface.OnRightStick;
+                @LBump.started -= m_Wrapper.m_ControlActionsCallbackInterface.OnLBump;
+                @LBump.performed -= m_Wrapper.m_ControlActionsCallbackInterface.OnLBump;
+                @LBump.canceled -= m_Wrapper.m_ControlActionsCallbackInterface.OnLBump;
+                @RBump.started -= m_Wrapper.m_ControlActionsCallbackInterface.OnRBump;
+                @RBump.performed -= m_Wrapper.m_ControlActionsCallbackInterface.OnRBump;
+                @RBump.canceled -= m_Wrapper.m_ControlActionsCallbackInterface.OnRBump;
             }
             m_Wrapper.m_ControlActionsCallbackInterface = instance;
             if (instance != null)
@@ -259,6 +331,12 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                 @RightStick.started += instance.OnRightStick;
                 @RightStick.performed += instance.OnRightStick;
                 @RightStick.canceled += instance.OnRightStick;
+                @LBump.started += instance.OnLBump;
+                @LBump.performed += instance.OnLBump;
+                @LBump.canceled += instance.OnLBump;
+                @RBump.started += instance.OnRBump;
+                @RBump.performed += instance.OnRBump;
+                @RBump.canceled += instance.OnRBump;
             }
         }
     }
@@ -267,5 +345,7 @@ public class @PlayerControl : IInputActionCollection, IDisposable
     {
         void OnLeftStick(InputAction.CallbackContext context);
         void OnRightStick(InputAction.CallbackContext context);
+        void OnLBump(InputAction.CallbackContext context);
+        void OnRBump(InputAction.CallbackContext context);
     }
 }

@@ -9,6 +9,7 @@ public class PlayerManager : MonoBehaviour{
     public MovimentMamager movimentMamager;
     public ActionManager actionManager;
     public GameObject meshObject;
+    public BackHandBehaviour backHandBehaviour;
 
 
 }
