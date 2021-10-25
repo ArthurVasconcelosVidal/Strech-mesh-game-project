@@ -36,11 +36,11 @@ public class InputManager : MonoBehaviour{
         };
 
         playerControl.Control.RBump.started += ctx => {
-            Debug.Log("Apertou RBump");
+            playerManager.backHandBehaviour.PinchObject(true);
         };
 
         playerControl.Control.RBump.canceled += ctx => {
-            Debug.Log("Soltou RBump");
+            playerManager.backHandBehaviour.PinchObject(false);
         };
     }
 
