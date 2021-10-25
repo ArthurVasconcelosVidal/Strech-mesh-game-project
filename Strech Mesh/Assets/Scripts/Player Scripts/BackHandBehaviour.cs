@@ -10,16 +10,22 @@ public class BackHandBehaviour : MonoBehaviour{
     CustomSoftbodyManipulator objectManipulator = null; 
     [SerializeField] float maxDistance;
 
+    [Header("Mesh Deformation parameters")]
+    [SerializeField] Shader strechMaterialShader;
+    [SerializeField] GameObject anchorPrefab;
+    [SerializeField] GameObject handlePrefab;
+    [SerializeField] float timeToClearForces = 0.5f;
+
     void FixedUpdate(){
         if (objectManipulator){
-            objectManipulator.DeformateBody(aimPoint.transform);
+            objectManipulator.MoveHandle(aimPoint.transform.position);
         }
     }
 
     private void LateUpdate(){
-        if (objectManipulator && Vector3.Distance(aimPoint.transform.position, objectManipulator.anchor.transform.position) > objectManipulator.maxDistanceToTheObject){
-            Debug.Log("Atingiu max range");
-        }
+        //if (objectManipulator && Vector3.Distance(aimPoint.transform.position, objectManipulator.anchorObject.transform.position) > objectManipulator.maxDistanceToTheObject){
+        //    Debug.Log("Atingiu max range");
+        //}
     }
 
     public void ActiveHand(bool handState = true) {
@@ -32,16 +38,20 @@ public class BackHandBehaviour : MonoBehaviour{
             playerManager.movimentMamager.SwitchMovimentState(MovimentState.normalMoviment);
     }
 
-    public void PinchObject(bool grabbing = true) {
+    public void PinchObject(bool grabbing = true){
         if (grabbing){
             RaycastHit objectHit = StretchPoint();
-            if (objectHit.transform.TryGetComponent(out objectManipulator)){
-                objectManipulator.anchor.transform.position = objectHit.point;
+            if (objectHit.transform.GetComponent<Renderer>().material.shader == strechMaterialShader && objectHit.transform.GetComponent<CustomSoftbodyManipulator>() == null){
+                objectManipulator = objectHit.transform.gameObject.AddComponent<CustomSoftbodyManipulator>();
+                objectManipulator.InitializeMeshDeformation(objectHit.point, anchorPrefab, handlePrefab);
                 aimPoint.transform.position = objectHit.point;
             }
         }
-        else
+        else {
+            objectManipulator.TimeToClearHandleForces(timeToClearForces);
             objectManipulator = null;
+        }
+            
     }
 
     RaycastHit StretchPoint() {
