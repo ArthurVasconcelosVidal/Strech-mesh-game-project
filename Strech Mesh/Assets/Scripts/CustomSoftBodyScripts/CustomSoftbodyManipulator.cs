@@ -20,10 +20,6 @@ public class CustomSoftbodyManipulator : MonoBehaviour{
     static readonly int HardnessId = Shader.PropertyToID("_Hardness");
     static readonly int RadiusId = Shader.PropertyToID("_Radius");
 
-    void Awake(){
-        
-    }
-
     void FixedUpdate(){
         if (initialized)
             DeformateBody(handleObject.transform);
@@ -46,7 +42,7 @@ public class CustomSoftbodyManipulator : MonoBehaviour{
         softbodyMaterial.SetFloat(RadiusId, radius);
     }
 
-    public void InitializeMeshDeformation(Vector3 strechPoint, GameObject anchorPrefab, GameObject handlePrefab){
+    public void InitializeMeshDeformation(Vector3 strechPoint, GameObject anchorPrefab, GameObject handlePrefab, float hardness = 0, float radius = 0){
         anchorObject = Instantiate(anchorPrefab, transform);
         handleObject = Instantiate(handlePrefab, transform);
         handleObject.GetComponent<SpringJoint>().connectedBody = anchorObject.GetComponent<Rigidbody>();
@@ -56,7 +52,10 @@ public class CustomSoftbodyManipulator : MonoBehaviour{
 
         anchorObject.transform.position = strechPoint;
         handleObject.transform.position = strechPoint;
-        
+
+        this.hardness = Mathf.Clamp01(hardness);
+        this.radius = radius;
+
         initialized = true;
     }
 

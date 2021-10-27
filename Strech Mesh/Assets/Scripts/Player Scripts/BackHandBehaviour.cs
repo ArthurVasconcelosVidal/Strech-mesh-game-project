@@ -7,7 +7,7 @@ public class BackHandBehaviour : MonoBehaviour{
     public GameObject backHand;
     public GameObject aimPoint;
     public GameObject cameraObject;
-    CustomSoftbodyManipulator objectManipulator = null; 
+    SoftBodyControl softBodyControl = null; 
     [SerializeField] float maxDistance;
 
     [Header("Mesh Deformation parameters")]
@@ -17,8 +17,8 @@ public class BackHandBehaviour : MonoBehaviour{
     [SerializeField] float timeToClearForces = 0.5f;
 
     void FixedUpdate(){
-        if (objectManipulator){
-            objectManipulator.MoveHandle(aimPoint.transform.position);
+        if (softBodyControl){
+            softBodyControl.SetHandlePosition(aimPoint.transform.position);
         }
     }
 
@@ -41,15 +41,15 @@ public class BackHandBehaviour : MonoBehaviour{
     public void PinchObject(bool grabbing = true){
         if (grabbing){
             RaycastHit objectHit = StretchPoint();
-            if (objectHit.transform.GetComponent<Renderer>().material.shader == strechMaterialShader && objectHit.transform.GetComponent<CustomSoftbodyManipulator>() == null){
-                objectManipulator = objectHit.transform.gameObject.AddComponent<CustomSoftbodyManipulator>();
-                objectManipulator.InitializeMeshDeformation(objectHit.point, anchorPrefab, handlePrefab);
+            if (objectHit.transform && objectHit.transform.TryGetComponent(out softBodyControl)){
+                softBodyControl.AddMeshDeformation(objectHit.point);
+                softBodyControl.SetGrabbed(true);
                 aimPoint.transform.position = objectHit.point;
             }
         }
-        else {
-            objectManipulator.TimeToClearHandleForces(timeToClearForces);
-            objectManipulator = null;
+        else if (softBodyControl) {
+            softBodyControl.SetGrabbed(false);
+            softBodyControl = null;
         }
             
     }
