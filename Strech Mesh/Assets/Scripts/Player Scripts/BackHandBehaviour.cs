@@ -10,22 +10,10 @@ public class BackHandBehaviour : MonoBehaviour{
     SoftBodyControl softBodyControl = null; 
     [SerializeField] float maxDistance;
 
-    [Header("Mesh Deformation parameters")]
-    [SerializeField] Shader strechMaterialShader;
-    [SerializeField] GameObject anchorPrefab;
-    [SerializeField] GameObject handlePrefab;
-    [SerializeField] float timeToClearForces = 0.5f;
-
     void FixedUpdate(){
         if (softBodyControl){
             softBodyControl.SetHandlePosition(aimPoint.transform.position);
         }
-    }
-
-    private void LateUpdate(){
-        //if (objectManipulator && Vector3.Distance(aimPoint.transform.position, objectManipulator.anchorObject.transform.position) > objectManipulator.maxDistanceToTheObject){
-        //    Debug.Log("Atingiu max range");
-        //}
     }
 
     public void ActiveHand(bool handState = true) {
@@ -42,9 +30,11 @@ public class BackHandBehaviour : MonoBehaviour{
         if (grabbing){
             RaycastHit objectHit = StretchPoint();
             if (objectHit.transform && objectHit.transform.TryGetComponent(out softBodyControl)){
-                softBodyControl.AddMeshDeformation(objectHit.point);
-                softBodyControl.SetGrabbed(true);
-                aimPoint.transform.position = objectHit.point;
+                if (softBodyControl.AddMeshDeformation(objectHit.point)){
+                    softBodyControl.SetGrabbed(true);
+                    aimPoint.transform.position = objectHit.point;
+                }
+                else softBodyControl = null;
             }
         }
         else if (softBodyControl) {

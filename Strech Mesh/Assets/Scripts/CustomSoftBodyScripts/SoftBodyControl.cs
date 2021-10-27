@@ -13,10 +13,15 @@ public class SoftBodyControl : MonoBehaviour{
     [SerializeField] GameObject anchorPrefab;
     [SerializeField] GameObject handlePrefab;
     [SerializeField] float timeToClearForces;
+    public float maxStrechDistance; 
 
-    public void AddMeshDeformation(Vector3 deformPosition){
-        softBodyManipulator = transform.gameObject.AddComponent<CustomSoftbodyManipulator>();
-        softBodyManipulator.InitializeMeshDeformation(deformPosition, anchorPrefab, handlePrefab, bodyHardness, deformationSphereRange);
+    public bool AddMeshDeformation(Vector3 deformPosition){
+        if (!softBodyManipulator){
+            softBodyManipulator = transform.gameObject.AddComponent<CustomSoftbodyManipulator>();
+            softBodyManipulator.InitializeMeshDeformation(deformPosition, anchorPrefab, handlePrefab, bodyHardness, deformationSphereRange, maxStrechDistance);
+            return true;
+        }else 
+            return false;
     }
 
     public bool isDeforming() {
@@ -27,7 +32,7 @@ public class SoftBodyControl : MonoBehaviour{
     public void SetGrabbed(bool state){
         isGrabed = state;
         if (!isGrabed && softBodyManipulator != null){
-            softBodyManipulator.TimeToClearHandleForces(timeToClearForces);
+            softBodyManipulator.TimeToClearForcesAndDestroy(timeToClearForces);
         }
     }
 

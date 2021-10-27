@@ -21,8 +21,9 @@ public class CustomSoftbodyManipulator : MonoBehaviour{
     static readonly int RadiusId = Shader.PropertyToID("_Radius");
 
     void FixedUpdate(){
-        if (initialized)
+        if (initialized) {
             DeformateBody(handleObject.transform);
+        }
     }
 
     void ClearForces(){
@@ -42,7 +43,7 @@ public class CustomSoftbodyManipulator : MonoBehaviour{
         softbodyMaterial.SetFloat(RadiusId, radius);
     }
 
-    public void InitializeMeshDeformation(Vector3 strechPoint, GameObject anchorPrefab, GameObject handlePrefab, float hardness = 0, float radius = 0){
+    public void InitializeMeshDeformation(Vector3 strechPoint, GameObject anchorPrefab, GameObject handlePrefab, float hardness = 0, float radius = 0, float maxDistance = 10){
         anchorObject = Instantiate(anchorPrefab, transform);
         handleObject = Instantiate(handlePrefab, transform);
         handleObject.GetComponent<SpringJoint>().connectedBody = anchorObject.GetComponent<Rigidbody>();
@@ -55,15 +56,23 @@ public class CustomSoftbodyManipulator : MonoBehaviour{
 
         this.hardness = Mathf.Clamp01(hardness);
         this.radius = radius;
+        maxDistanceToTheObject = maxDistance;
 
         initialized = true;
     }
 
-    public void MoveHandle(Vector3 position) {
-        handleObject.transform.position = position;
+    public void MoveHandle(Vector3 position){
+        if (Vector3.Distance(position, anchorObject.transform.position) < maxDistanceToTheObject){
+            handleObject.transform.position = position;
+        }
+        else{
+            Vector3 direction = position - anchorObject.transform.position;
+            Vector3 finalPosition = anchorObject.transform.position + (direction.normalized* maxDistanceToTheObject);
+            handleObject.transform.position = finalPosition;
+        }
     }
 
-    public void TimeToClearHandleForces(float time) {
+    public void TimeToClearForcesAndDestroy(float time) {
         Invoke("ClearForces", time);
         StartCoroutine("DestroyWhenStop", time);
     }
