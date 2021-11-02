@@ -15,11 +15,11 @@ C:/Projetos GitHub/Strech-mesh-project/Strech Mesh
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60794
+49796
 Successfully changed project path to: C:/Projetos GitHub/Strech-mesh-project/Strech Mesh
 C:/Projetos GitHub/Strech-mesh-project/Strech Mesh
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 147.10 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 170.91 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.10f1 (b15f561b2cef)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/Unity 2021.1.10f1/Editor/Data/Resources/UnitySubsystems
@@ -36,92 +36,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/Unity 2021.1.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/Unity 2021.1.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/Unity 2021.1.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56328
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/Unity 2021.1.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004839 seconds.
+Registered in 0.005230 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 152.33 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 134.13 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.564 seconds
+- Completed reload, in  2.325 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2565ms)
-		BeginReloadAssembly (103ms)
+	ReloadAssembly (2325ms)
+		BeginReloadAssembly (117ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (872ms)
-			LoadAssemblies (98ms)
+		EndReloadAssembly (652ms)
+			LoadAssemblies (113ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (316ms)
+			SetupTypeCache (233ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (423ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (314ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (153ms)
+				RefreshPlugins (134ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (209ms)
-				ProcessInitializeOnLoadMethodAttributes (50ms)
+				ProcessInitializeOnLoadAttributes (128ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.019261 seconds.
+Registered in 0.014723 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 154.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 143.37 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.420 seconds
+- Completed reload, in  2.219 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2421ms)
-		BeginReloadAssembly (295ms)
+	ReloadAssembly (2220ms)
+		BeginReloadAssembly (233ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (2002ms)
-			LoadAssemblies (296ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (1891ms)
+			LoadAssemblies (421ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (621ms)
+			SetupTypeCache (554ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (90ms)
-			SetupLoadedEditorAssemblies (893ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (714ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (155ms)
-				BeforeProcessingInitializeOnLoad (164ms)
-				ProcessInitializeOnLoadAttributes (539ms)
+				RefreshPlugins (143ms)
+				BeforeProcessingInitializeOnLoad (139ms)
+				ProcessInitializeOnLoadAttributes (401ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (17ms)
+				AfterProcessingInitializeOnLoad (16ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 2.31 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.28 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4722 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.5 MB.
-System memory in use after: 184.4 MB.
+Unloading 4721 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 184.2 MB.
+System memory in use after: 184.1 MB.
 
-Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 5164.
-Total: 4.824100 ms (FindLiveObjects: 0.463500 ms CreateObjectMapping: 0.290900 ms MarkObjects: 3.835200 ms  DeleteObjects: 0.232600 ms)
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 5163.
+Total: 5.823300 ms (FindLiveObjects: 0.772800 ms CreateObjectMapping: 0.556000 ms MarkObjects: 4.243400 ms  DeleteObjects: 0.249700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -135,188 +135,20 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '51ee1a0a8fc784525281c26e36c9f068') in 0.216982 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 32.455135 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0042418d5359981fef6bf9a8a6deff87') in 0.015724 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 255.717453 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '7846c510290ae5f950b208ba64d54dab') in 0.037393 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 235.795518 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6f44dafd229ae999d64efd2118d09df8') in 0.014625 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.497924 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'bbcff1e75c1d32fb8219fac877bfc091') in 0.017455 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 299.826061 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '512c79c50a90c95fd02ba5216d725101') in 0.014077 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.468996 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ae71eac932c488bba540e977171cadfe') in 0.037211 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.382730 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'dabf488184f3f355a23561a1cf7e8245') in 0.011533 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.429754 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9ed76a91a3f99c0a0f00f4dc0eaed659') in 0.021489 seconds 
+  path: Assets/Scripts/CustomSoftBodyScripts/CustomSoftbodyManipulator.cs
+  artifactKey: Guid(5040bc6f4d9acb44e825cc2bcd57c4d0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Scripts/CustomSoftBodyScripts/CustomSoftbodyManipulator.cs using Guid(5040bc6f4d9acb44e825cc2bcd57c4d0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'bb8179a4c50b89c499fbadb8010a7756') in 0.165068 seconds 
 ========================================================================
 Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.024084 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.987 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1987ms)
-		BeginReloadAssembly (252ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (89ms)
-		EndReloadAssembly (1633ms)
-			LoadAssemblies (192ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (615ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (78ms)
-			SetupLoadedEditorAssemblies (589ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (115ms)
-				ProcessInitializeOnLoadAttributes (437ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (18ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 9.74 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.9 MB.
-System memory in use after: 177.9 MB.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.2 MB.
+System memory in use after: 86.2 MB.
 
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5167.
-Total: 10.120300 ms (FindLiveObjects: 1.689300 ms CreateObjectMapping: 0.729400 ms MarkObjects: 7.508500 ms  DeleteObjects: 0.190600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 57.247174 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '33263f77a3aeee06d6e6583ee7141f93') in 0.099482 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 42.748546 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '23bf81bfacac7696c3eb3f0b85c0bf99') in 0.012626 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.045049 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'bb7e3bf98390df490fa44498c3df53e3') in 0.013256 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 40.772521 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '92cee3c94daee138f4ee45573854f74f') in 0.016185 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.015561 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.457 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2458ms)
-		BeginReloadAssembly (210ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (66ms)
-		EndReloadAssembly (2123ms)
-			LoadAssemblies (192ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1024ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (91ms)
-			SetupLoadedEditorAssemblies (658ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (148ms)
-				ProcessInitializeOnLoadAttributes (470ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (20ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 178.0 MB.
-System memory in use after: 177.9 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5170.
-Total: 4.468500 ms (FindLiveObjects: 0.402500 ms CreateObjectMapping: 0.254000 ms MarkObjects: 3.633500 ms  DeleteObjects: 0.176900 ms)
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 5163.
+Total: 4.701000 ms (FindLiveObjects: 0.413600 ms CreateObjectMapping: 0.319700 ms MarkObjects: 3.736600 ms  DeleteObjects: 0.230000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -329,1769 +161,99 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 110.540462 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '830cc85dce7783b35c717237ff4c2913') in 0.206373 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.422668 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'dfbe97e9ea46bf26a77bff1c77452686') in 0.017703 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.559239 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f973f8b1dd054d6d140916042a439b87') in 0.115554 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 30.523369 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '50e213fdfe10f67a6c0b639f6d0819cc') in 0.017400 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.871619 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '953901eb0b4faf91aa0c477a457cf498') in 0.011923 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.027932 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0eff093864f6025080ede8eb23e3718a') in 0.013142 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 54.199905 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '7d3c37e53892786f6a29b83e95b4ee14') in 0.124514 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 597.218643 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e9681ea952525b5f6ea6603bdc2e9a57') in 0.012931 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.622521 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '62cee0c1270779f1c129166acaf72053') in 0.027655 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 77.290656 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '7e62f56c8248b581e8f9d03313a17ea5') in 0.017954 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 101.496700 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2c99a58f8ba096f8bb2816511861fdc1') in 0.013763 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 32.630980 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1be1565c190175499e2012cbddd470ba') in 0.013463 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 133.009963 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6bb97ee419b71b4396f09f101e7e1932') in 0.012618 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 190.754423 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6deeb4cde133c334c56c12962163daf0') in 0.011349 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 111.174708 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '84f8dbb3bbd945369d4ec54e3438fde6') in 0.013767 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 51.863478 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '58b0a7f799196094aee77a5c4ef4ef5c') in 0.012695 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 44.705999 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '388edeac709048316580c7b3ff2a9f9e') in 0.018466 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 524.742063 seconds.
-  path: Packages/com.unity.render-pipelines.universal
-  artifactKey: Guid(87f3e00faee74b02e6227b1c727beb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal using Guid(87f3e00faee74b02e6227b1c727beb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a08795c2ff7aa8a59dc34e295bc15f9') in 0.008208 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001726 seconds.
-  path: Packages/com.unity.render-pipelines.universal/package.json
-  artifactKey: Guid(30648b8d550465f4bb77f1e1afd0b37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/package.json using Guid(30648b8d550465f4bb77f1e1afd0b37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45aedfe98d524ead69ce69dd822c5f26') in 0.036037 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.816070 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Editor
-  artifactKey: Guid(53c20613ce8ac478dba8507359e02516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Editor using Guid(53c20613ce8ac478dba8507359e02516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77a1fe23ea7a4135da78bf158b9dbc3') in 0.006837 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.068768 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Editor/Unity.RenderPipelines.Universal.Editor.asmdef
-  artifactKey: Guid(c579267770062bf448e75eb160330b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Editor/Unity.RenderPipelines.Universal.Editor.asmdef using Guid(c579267770062bf448e75eb160330b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eebb0dbf02538609caf0df26a0fd42b') in 0.009319 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.966810 seconds.
-  path: Assets/Settings/UniversalRP-LowQuality.asset
-  artifactKey: Guid(a31e9f9f9c9d4b9429ed0d1234e22103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/UniversalRP-LowQuality.asset using Guid(a31e9f9f9c9d4b9429ed0d1234e22103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72be010170f4a25e680cf020f1a0ccae') in 0.009853 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000843 seconds.
-  path: Assets/Settings/UniversalRP-MediumQuality.asset
-  artifactKey: Guid(d847b876476d3d6468f5dfcd34266f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/UniversalRP-MediumQuality.asset using Guid(d847b876476d3d6468f5dfcd34266f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe0d1a54879432a123a59da856550d5b') in 0.007070 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 245.633838 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '126fe570ed7463d6af585e94269f556a') in 0.017264 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.146160 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f687ef4b7d6e8fe910c972e6d342ceae') in 0.016087 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 44.781087 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '46d51f379c0a0a3e30140097d900b3a4') in 0.033850 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.973372 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e3e8fb8f9e08cb3df3c9e991b0dfe9da') in 0.011552 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.934759 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '79962d7ba1ed0fbeb82f9af22eca42d6') in 0.012614 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 38.063424 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6fc15022b8b09e09b32397f5f5b6956c') in 0.020296 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.999932 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b65ac9d3bb6318ae187908da160b8769') in 0.011295 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 61.068539 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e9dd4f4094551ff20c3489ea2a25bf24') in 0.023047 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.313290 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3b9be37b0e76620fe5a3d8c5fdef2217') in 0.013468 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 149.490465 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '170b0510cb1766a8aa3a18da46ad8c48') in 0.013997 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.658800 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '37a3cdcf4e140d8aa8ddf397ca206252') in 0.075015 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2174.364859 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9f8a18f0ea6e20a247bbc5ce99a6ef5a') in 0.014404 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 740.840276 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a1e5d16e6f839d630d28b26be9e52e71') in 0.014937 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 314.755880 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e89c18c8c08c874a80ffc882f12cbadc') in 0.041434 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.792226 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5b638852470ff368879262184ae5be3b') in 0.017603 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.485334 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '668cdc13d29cdf3a84bdc8bf238245c0') in 0.013537 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 70.857408 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '307ab9c82de73c8a2873765980edc067') in 0.017094 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 28.665014 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd9dff38438acb897de478eaf4cbe9dc2') in 0.021833 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.881846 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c67bd380f17cd693c23eafb6c77efa8e') in 0.020743 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2172.493714 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '61fe9516b65d8a6c17462db8fc4410a6') in 0.017733 seconds 
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.017967 seconds.
+Registered in 0.014349 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.908 seconds
+- Completed reload, in  1.736 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1910ms)
-		BeginReloadAssembly (365ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (23ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (185ms)
-		EndReloadAssembly (1436ms)
-			LoadAssemblies (181ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (553ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (489ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (107ms)
-				ProcessInitializeOnLoadAttributes (351ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (15ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 178.1 MB.
-System memory in use after: 178.0 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5173.
-Total: 3.866500 ms (FindLiveObjects: 0.497500 ms CreateObjectMapping: 0.309200 ms MarkObjects: 2.841300 ms  DeleteObjects: 0.217400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 212.624459 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0fd8be6b53f1cf9ff3db73a1dd659e83') in 0.121049 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 564.014880 seconds.
-  path: Assets/Prefabs/AnchorStrechObject.prefab
-  artifactKey: Guid(d456f2fc6a99a834f9f6d5a3625b4792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AnchorStrechObject.prefab using Guid(d456f2fc6a99a834f9f6d5a3625b4792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3240db5eb7b8ef07f0757e9a9b7170e') in 0.115159 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000946 seconds.
-  path: Assets/Prefabs/HandleStrechObject.prefab
-  artifactKey: Guid(464c6885772a27947adcd7864c8bd826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/HandleStrechObject.prefab using Guid(464c6885772a27947adcd7864c8bd826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e38f578ed4b668c09bfa6ce5e5b759e') in 0.021386 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.634354 seconds.
-  path: Assets/Settings/ForwardRenderer.asset
-  artifactKey: Guid(4a8e21d5c33334b11b34a596161b9360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/ForwardRenderer.asset using Guid(4a8e21d5c33334b11b34a596161b9360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5483d16381747e204aa2878ff79c8773') in 0.007735 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 81.040470 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5ba46da14aef425f0e105143a02e1e41') in 0.023814 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 33.564264 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '21873a75683b35c2d8ee35df8a021bf0') in 0.017956 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.597674 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.420 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2422ms)
-		BeginReloadAssembly (354ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (73ms)
-		EndReloadAssembly (1913ms)
-			LoadAssemblies (542ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (624ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (69ms)
-			SetupLoadedEditorAssemblies (560ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (139ms)
-				ProcessInitializeOnLoadAttributes (386ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (15ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 178.1 MB.
-System memory in use after: 178.1 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5177.
-Total: 4.084100 ms (FindLiveObjects: 0.396300 ms CreateObjectMapping: 0.255800 ms MarkObjects: 3.244800 ms  DeleteObjects: 0.185600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 6832.722105 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd093798923276885781cee075896a84e') in 0.341490 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 29.093539 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '555abe1dc18570c44c6b99ad4659abbb') in 0.023484 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 103.352098 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6ffb61fdd350e2869cf9e15ba0a9430d') in 0.024248 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 45.398589 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2bca98177f452a45c55cd18d0407796a') in 0.022238 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 194.154653 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '70927db0f5c4ef677e57c9dd46295177') in 0.013229 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.021643 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.48 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.266 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3267ms)
-		BeginReloadAssembly (412ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (19ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (195ms)
-		EndReloadAssembly (2468ms)
-			LoadAssemblies (255ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (762ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (76ms)
-			SetupLoadedEditorAssemblies (705ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (139ms)
-				ProcessInitializeOnLoadAttributes (523ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (21ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.9 MB.
-System memory in use after: 177.9 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5180.
-Total: 4.412400 ms (FindLiveObjects: 0.489700 ms CreateObjectMapping: 0.271300 ms MarkObjects: 3.422500 ms  DeleteObjects: 0.227300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 77.754915 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3c84b502da8ce8465602817f1aac5ee9') in 0.088881 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.018487 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.315 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2316ms)
-		BeginReloadAssembly (231ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (91ms)
-		EndReloadAssembly (1856ms)
-			LoadAssemblies (224ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (689ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (680ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (134ms)
-				ProcessInitializeOnLoadAttributes (510ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (17ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 178.1 MB.
-System memory in use after: 178.1 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5183.
-Total: 5.823100 ms (FindLiveObjects: 1.035400 ms CreateObjectMapping: 0.803000 ms MarkObjects: 3.799000 ms  DeleteObjects: 0.183400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 341.585900 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3613c5d8ef806d6b1196c4214843c4f8') in 0.101338 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.016344 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.693 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1694ms)
-		BeginReloadAssembly (184ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (57ms)
-		EndReloadAssembly (1413ms)
-			LoadAssemblies (161ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (530ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (512ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (110ms)
-				ProcessInitializeOnLoadAttributes (369ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (16ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 178.2 MB.
-System memory in use after: 178.1 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5186.
-Total: 6.203900 ms (FindLiveObjects: 0.447400 ms CreateObjectMapping: 0.423200 ms MarkObjects: 5.135000 ms  DeleteObjects: 0.196800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 236.376318 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0f5ccf2a6de473dffae05c9da26998ba') in 0.102005 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.026528 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.842 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1843ms)
+	ReloadAssembly (1736ms)
 		BeginReloadAssembly (209ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (57ms)
-		EndReloadAssembly (1527ms)
-			LoadAssemblies (194ms)
-			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (553ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (573ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (110ms)
-				ProcessInitializeOnLoadAttributes (425ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (19ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 178.2 MB.
-System memory in use after: 178.1 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5189.
-Total: 4.889000 ms (FindLiveObjects: 0.540200 ms CreateObjectMapping: 0.376600 ms MarkObjects: 3.779300 ms  DeleteObjects: 0.190700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 83.082609 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '709a7400addeff3964c1cfe53f7341d2') in 0.114158 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 56.307023 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4bac9ca0ed445c4ac613e51c323060e7') in 0.015321 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 717.943041 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '13154f67b1edeae8e38c6e02e649cf52') in 0.017226 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 30.937997 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4313cbc7d25f6bbc5c0b48c1665b54bb') in 0.177012 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.024010 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.37 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.890 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1891ms)
-		BeginReloadAssembly (180ms)
-			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (54ms)
-		EndReloadAssembly (1607ms)
-			LoadAssemblies (170ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (531ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (556ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (112ms)
-				ProcessInitializeOnLoadAttributes (410ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (15ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 178.2 MB.
-System memory in use after: 178.1 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5192.
-Total: 3.989800 ms (FindLiveObjects: 0.580200 ms CreateObjectMapping: 0.254100 ms MarkObjects: 2.948900 ms  DeleteObjects: 0.205200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 200.422865 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0938f3ad7c1f7f2275dd0563a0a94f75') in 0.338984 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 377.197059 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd1ea183562cc6ea768b70bc3d4f28664') in 0.015413 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 121.518943 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4794bf80dd95b66fe6ef53851fbe4682') in 0.016248 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 38.136727 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd08351f7864b0b3504d29f5ac19f81b3') in 0.013408 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.018343 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.207 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2208ms)
-		BeginReloadAssembly (237ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (70ms)
-		EndReloadAssembly (1826ms)
-			LoadAssemblies (231ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (724ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (78ms)
-			SetupLoadedEditorAssemblies (614ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (127ms)
-				ProcessInitializeOnLoadAttributes (446ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (19ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 178.0 MB.
-System memory in use after: 177.9 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5195.
-Total: 5.879300 ms (FindLiveObjects: 0.446500 ms CreateObjectMapping: 0.316000 ms MarkObjects: 3.513400 ms  DeleteObjects: 1.601500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 125.567654 seconds.
-  path: Assets/Materials/URP/SoftBody URP/teste 1.mat
-  artifactKey: Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/URP/SoftBody URP/teste 1.mat using Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb4340355aae55b1f6a2a81b59d92d72') in 0.595642 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.325239 seconds.
-  path: Assets/Materials/URP/SoftBody URP/teste 1.mat
-  artifactKey: Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/teste 1.mat using Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '168ae50637eaac1aa8e72819578834ad') in 0.163088 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 36.670823 seconds.
-  path: Assets/Materials/URP/SoftBody URP/teste 1.mat
-  artifactKey: Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/URP/SoftBody URP/teste 1.mat using Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64f6967a6b2207dbf8bcac79b0e5f769') in 0.023935 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.917409 seconds.
-  path: Assets/Materials/URP/SoftBody URP/teste 1.mat
-  artifactKey: Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/teste 1.mat using Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c09668f5d384ccc0384ed7d877befc83') in 0.014067 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.014358 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.969 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1970ms)
-		BeginReloadAssembly (221ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (65ms)
-		EndReloadAssembly (1643ms)
-			LoadAssemblies (182ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (610ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (560ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (122ms)
-				ProcessInitializeOnLoadAttributes (401ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (16ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.34 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.6 MB.
-System memory in use after: 184.5 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5276.
-Total: 4.624100 ms (FindLiveObjects: 0.444700 ms CreateObjectMapping: 0.333600 ms MarkObjects: 3.629300 ms  DeleteObjects: 0.214900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 100.014893 seconds.
-  path: Assets/Materials/URP/SoftBody URP/teste 1.mat
-  artifactKey: Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/URP/SoftBody URP/teste 1.mat using Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec33263ddfce362b49737cce7b1ebef6') in 0.243352 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000788 seconds.
-  path: Assets/Materials/URP/SoftBody URP/teste 1.mat
-  artifactKey: Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/teste 1.mat using Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '523b660c291c1117ee6e19ec244bfa0d') in 0.073282 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.590581 seconds.
-  path: Assets/Materials/URP/SoftBody URP/teste 1.mat
-  artifactKey: Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/URP/SoftBody URP/teste 1.mat using Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc55aeaad878e7450c108194267109e') in 0.615046 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.315408 seconds.
-  path: Assets/Materials/URP/SoftBody URP/teste 1.mat
-  artifactKey: Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/teste 1.mat using Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1d85e4323dd5b0995cfda437e7cf95dc') in 0.018587 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.066450 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.973 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2974ms)
-		BeginReloadAssembly (216ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (69ms)
-		EndReloadAssembly (2643ms)
-			LoadAssemblies (212ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (646ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (64ms)
-			SetupLoadedEditorAssemblies (1504ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (121ms)
-				ProcessInitializeOnLoadAttributes (1343ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (21ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (27ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.6 MB.
-System memory in use after: 184.5 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5315.
-Total: 5.264500 ms (FindLiveObjects: 0.438200 ms CreateObjectMapping: 0.628300 ms MarkObjects: 4.018200 ms  DeleteObjects: 0.178100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 176.846118 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5b39726bf3d27d36c2a2dd54aa28293c') in 0.546695 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.600339 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '94c1705dd5cc5d69b1f1619aeb61c111') in 0.223260 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.763621 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c6f08c29fae8629910251705778b5687') in 0.061888 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 45.519988 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0aa600fb3cccd8b4e1daf4e2edcfc291') in 0.014455 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.015895 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.875 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1876ms)
-		BeginReloadAssembly (219ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (62ms)
-		EndReloadAssembly (1539ms)
-			LoadAssemblies (203ms)
+		EndReloadAssembly (1432ms)
+			LoadAssemblies (182ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (567ms)
+			SetupTypeCache (543ms)
 			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (67ms)
-			SetupLoadedEditorAssemblies (518ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (114ms)
-				ProcessInitializeOnLoadAttributes (373ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (16ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.10 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.5 MB.
-System memory in use after: 184.5 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5318.
-Total: 4.307100 ms (FindLiveObjects: 0.457200 ms CreateObjectMapping: 0.295700 ms MarkObjects: 3.296400 ms  DeleteObjects: 0.256000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.014724 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.37 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.727 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2728ms)
-		BeginReloadAssembly (242ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (80ms)
-		EndReloadAssembly (2352ms)
-			LoadAssemblies (216ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (938ms)
-			ReleaseScriptCaches (5ms)
-			RebuildScriptCaches (88ms)
-			SetupLoadedEditorAssemblies (747ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (154ms)
-				ProcessInitializeOnLoadAttributes (549ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (20ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (29ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.5 MB.
-System memory in use after: 184.5 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5321.
-Total: 5.915400 ms (FindLiveObjects: 0.577300 ms CreateObjectMapping: 0.420400 ms MarkObjects: 4.690500 ms  DeleteObjects: 0.225700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.021262 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.869 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1870ms)
-		BeginReloadAssembly (198ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (1567ms)
-			LoadAssemblies (177ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (561ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (64ms)
-			SetupLoadedEditorAssemblies (572ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (118ms)
-				ProcessInitializeOnLoadAttributes (420ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (16ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.3 MB.
-System memory in use after: 184.3 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5324.
-Total: 4.156900 ms (FindLiveObjects: 0.376500 ms CreateObjectMapping: 0.463400 ms MarkObjects: 3.136000 ms  DeleteObjects: 0.179700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1828.980956 seconds.
-  path: Assets/Materials/URP/SoftBody URP/teste 1.mat
-  artifactKey: Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/URP/SoftBody URP/teste 1.mat using Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a6b84227f33eed5c93391914957eaa1') in 0.335706 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.668413 seconds.
-  path: Assets/Materials/URP/SoftBody URP/teste 1.mat
-  artifactKey: Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/teste 1.mat using Guid(09d136206f3fb0a4e9313031d24fdccf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c4f3ab6eba1c9e9249b409fcc6ce4982') in 0.071339 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000766 seconds.
-  path: Assets/Scenes/Game URP.unity
-  artifactKey: Guid(f3ef284e917d98c48b9cc5159dc1eab4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Scenes/Game URP.unity using Guid(f3ef284e917d98c48b9cc5159dc1eab4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'afba2cbcd12252a952d61bae7fe52c24') in 0.013236 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 67.944044 seconds.
-  path: Assets/Materials/Classic/Black.mat
-  artifactKey: Guid(e96ccfd4a829ab44281d088c7ceae098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Classic/Black.mat using Guid(e96ccfd4a829ab44281d088c7ceae098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44230473bfde0d805ef390c16348b011') in 0.020036 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000798 seconds.
-  path: Assets/Materials/Classic/White.mat
-  artifactKey: Guid(896e1d05f4fd05d4593e88e9ed2a3a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Classic/White.mat using Guid(896e1d05f4fd05d4593e88e9ed2a3a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c67e2cdda130fa9f8d1c2bac2e075a') in 0.017724 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000652 seconds.
-  path: Assets/Materials/Classic/Ground.mat
-  artifactKey: Guid(24b35ec05cde69c4d9c71cc097e41d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Classic/Ground.mat using Guid(24b35ec05cde69c4d9c71cc097e41d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eda3f981f980b080f54b165480506a5') in 0.027969 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.517090 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88547c2464595d31ebb1670b1db800ed') in 0.014090 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.634134 seconds.
-  path: Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat
-  artifactKey: Guid(4180b1db4a3fc624b81e33da7566047a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat using Guid(4180b1db4a3fc624b81e33da7566047a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a617db59524cbaff5e46a375339c082b') in 0.287299 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.043049 seconds.
-  path: Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat
-  artifactKey: Guid(4180b1db4a3fc624b81e33da7566047a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat using Guid(4180b1db4a3fc624b81e33da7566047a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5f05c9665049f207014f2178a0654de3') in 0.141106 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 28.462719 seconds.
-  path: Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat
-  artifactKey: Guid(4180b1db4a3fc624b81e33da7566047a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat using Guid(4180b1db4a3fc624b81e33da7566047a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '699de8d4a52313627017251c03e0a16f') in 0.020166 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.911503 seconds.
-  path: Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat
-  artifactKey: Guid(4180b1db4a3fc624b81e33da7566047a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat using Guid(4180b1db4a3fc624b81e33da7566047a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6aa2db0bd5ec65fcf447c3c783d7672b') in 0.015522 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001081 seconds.
-  path: Assets/Scenes/Game URP.unity
-  artifactKey: Guid(f3ef284e917d98c48b9cc5159dc1eab4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Scenes/Game URP.unity using Guid(f3ef284e917d98c48b9cc5159dc1eab4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '7e3bdc30d552c64a804f54ce93d3d012') in 0.011856 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.017156 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.043 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2120ms)
-		BeginReloadAssembly (268ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (63ms)
-		EndReloadAssembly (1740ms)
-			LoadAssemblies (164ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (569ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (740ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (174ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (120ms)
-				ProcessInitializeOnLoadAttributes (419ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (18ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.7 MB.
-System memory in use after: 184.6 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5363.
-Total: 5.760400 ms (FindLiveObjects: 0.421900 ms CreateObjectMapping: 0.248200 ms MarkObjects: 4.818000 ms  DeleteObjects: 0.270100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1181.865344 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '014b9165e5eb959ab06f98031620371c') in 0.027898 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.466335 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3850d835aa83a8e0163e5ca3adb17e00') in 0.104272 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 77.319647 seconds.
-  path: Assets/Materials/Classic/SoftBody Materials/White.mat
-  artifactKey: Guid(956995b047787ae41b58d994282841e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Classic/SoftBody Materials/White.mat using Guid(956995b047787ae41b58d994282841e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3712dd0c367e7de27e5cc55c49e12b31') in 0.283730 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.363379 seconds.
-  path: Assets/Scenes/Game URP.unity
-  artifactKey: Guid(f3ef284e917d98c48b9cc5159dc1eab4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Scenes/Game URP.unity using Guid(f3ef284e917d98c48b9cc5159dc1eab4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f7a4d322b70efc9f05c01d201cdd34a0') in 0.011096 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.491638 seconds.
-  path: Assets/Scenes/Game URP.unity
-  artifactKey: Guid(f3ef284e917d98c48b9cc5159dc1eab4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Scenes/Game URP.unity using Guid(f3ef284e917d98c48b9cc5159dc1eab4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '352b3b90fbeacffb110c56936151058a') in 0.018004 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.017408 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.845 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1846ms)
-		BeginReloadAssembly (191ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (58ms)
-		EndReloadAssembly (1561ms)
-			LoadAssemblies (161ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (562ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (63ms)
-			SetupLoadedEditorAssemblies (567ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (494ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (116ms)
-				ProcessInitializeOnLoadAttributes (413ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (21ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.8 MB.
-System memory in use after: 184.8 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5402.
-Total: 8.321200 ms (FindLiveObjects: 0.702000 ms CreateObjectMapping: 0.700900 ms MarkObjects: 6.726500 ms  DeleteObjects: 0.190000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 515.134474 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '48c08d87ffc76a8504bc9d13b0aa455f') in 0.521620 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.015594 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.26 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.342 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2343ms)
-		BeginReloadAssembly (263ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (14ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (68ms)
-		EndReloadAssembly (1973ms)
-			LoadAssemblies (392ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (588ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (618ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (110ms)
-				ProcessInitializeOnLoadAttributes (470ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (17ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.8 MB.
-System memory in use after: 184.8 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5405.
-Total: 5.931400 ms (FindLiveObjects: 0.608400 ms CreateObjectMapping: 0.254600 ms MarkObjects: 4.779100 ms  DeleteObjects: 0.287200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 112.220904 seconds.
-  path: Assets/Materials/Classic/SoftBody Materials/Blue.mat
-  artifactKey: Guid(ad623f4fe93aa634390da2fac9b2bec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Classic/SoftBody Materials/Blue.mat using Guid(ad623f4fe93aa634390da2fac9b2bec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53edd3124b5ed7f66b02498ba814fd50') in 0.243043 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000649 seconds.
-  path: Assets/Materials/Classic/SoftBody Materials/Green.mat
-  artifactKey: Guid(fd4713bf36fe01042bf388d98eb61c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Classic/SoftBody Materials/Green.mat using Guid(fd4713bf36fe01042bf388d98eb61c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53cb14d1c5b5ec35cc6d462183d34d26') in 0.018545 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 38.101492 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'fe8bb56d725be76642955094fe43d874') in 0.071485 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 49.787291 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1fc590c7b3ddd5b9245e87a9578c062d') in 0.028415 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.915447 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '00fd6c1d3fcca8506a81a65ffee6c9a5') in 0.021620 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.014562 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.425 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2453ms)
-		BeginReloadAssembly (266ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (17ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (77ms)
-		EndReloadAssembly (2067ms)
-			LoadAssemblies (201ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (694ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (77ms)
-			SetupLoadedEditorAssemblies (658ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (136ms)
-				ProcessInitializeOnLoadAttributes (483ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (19ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (25ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 185.1 MB.
-System memory in use after: 185.3 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5444.
-Total: 6.167200 ms (FindLiveObjects: 0.520800 ms CreateObjectMapping: 0.380000 ms MarkObjects: 5.017100 ms  DeleteObjects: 0.248000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 325.810771 seconds.
-  path: Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat
-  artifactKey: Guid(4180b1db4a3fc624b81e33da7566047a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat using Guid(4180b1db4a3fc624b81e33da7566047a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2347a904365d621ceaae918c47581152') in 0.229966 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.684048 seconds.
-  path: Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat
-  artifactKey: Guid(4180b1db4a3fc624b81e33da7566047a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat using Guid(4180b1db4a3fc624b81e33da7566047a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '16fe879bc953dcf48eb2e1e1c38f7a08') in 0.094737 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.015501 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.969 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1970ms)
-		BeginReloadAssembly (214ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (63ms)
-		EndReloadAssembly (1635ms)
-			LoadAssemblies (193ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (599ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (73ms)
-			SetupLoadedEditorAssemblies (555ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (117ms)
-				ProcessInitializeOnLoadAttributes (403ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (17ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 185.1 MB.
-System memory in use after: 185.2 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5483.
-Total: 4.683200 ms (FindLiveObjects: 0.447000 ms CreateObjectMapping: 0.287900 ms MarkObjects: 3.763800 ms  DeleteObjects: 0.183200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 127.321681 seconds.
-  path: Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat
-  artifactKey: Guid(4180b1db4a3fc624b81e33da7566047a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat using Guid(4180b1db4a3fc624b81e33da7566047a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14cfb2ca2b5a90de17220dfbad179450') in 0.239867 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000578 seconds.
-  path: Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat
-  artifactKey: Guid(4180b1db4a3fc624b81e33da7566047a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/Shader Graphs_StrechMeshShaderGraph.mat using Guid(4180b1db4a3fc624b81e33da7566047a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2e86a0570a85f4cbbd650a9e9dd76b05') in 0.070024 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 41.306467 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2f81fa9387cc98736ea4bc060b060036') in 0.236047 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.043181 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '81133ca90c03342d32cdf5f0ccc262be') in 0.434196 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 89.924396 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a1ad6b94d315817d32843c9c2f9d6546') in 0.017556 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 131.665013 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '14ae9e8cba6404e52133280c3d960f5a') in 0.015804 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13770.225076 seconds.
-  path: Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph
-  artifactKey: Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Materials/URP/SoftBody URP/StrechMeshShaderGraph.shadergraph using Guid(c0679b0f874f0b04b8033793788688d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c32eb4d0f588a05291c854503f4259b4') in 0.112294 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.022354 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Projetos GitHub\Strech-mesh-project\Strech Mesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 4.72 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.572 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3577ms)
-		BeginReloadAssembly (1108ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (106ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (773ms)
-		EndReloadAssembly (2368ms)
-			LoadAssemblies (211ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1027ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (263ms)
-			SetupLoadedEditorAssemblies (575ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (5ms)
-				BeforeProcessingInitializeOnLoad (109ms)
-				ProcessInitializeOnLoadAttributes (430ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (356ms)
 				ProcessInitializeOnLoadMethodAttributes (6ms)
 				AfterProcessingInitializeOnLoad (15ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (23ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 185.1 MB.
-System memory in use after: 185.3 MB.
+System memory in use before: 177.7 MB.
+System memory in use after: 177.7 MB.
 
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5522.
-Total: 4.578500 ms (FindLiveObjects: 0.444900 ms CreateObjectMapping: 0.276200 ms MarkObjects: 3.589800 ms  DeleteObjects: 0.265700 ms)
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 5166.
+Total: 5.050000 ms (FindLiveObjects: 0.611200 ms CreateObjectMapping: 0.305500 ms MarkObjects: 3.953800 ms  DeleteObjects: 0.178300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 9.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.8 MB.
+System memory in use after: 86.8 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 5166.
+Total: 4.792000 ms (FindLiveObjects: 0.353700 ms CreateObjectMapping: 0.276400 ms MarkObjects: 3.922600 ms  DeleteObjects: 0.238100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader compiler: UnityShaderCompiler.exe compiler executable disappeared on thread 4940, restarting
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 9.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.1 MB.
+System memory in use after: 87.1 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 5166.
+Total: 4.592900 ms (FindLiveObjects: 0.569400 ms CreateObjectMapping: 0.293600 ms MarkObjects: 3.560500 ms  DeleteObjects: 0.168200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
