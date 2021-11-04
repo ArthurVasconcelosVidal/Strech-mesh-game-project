@@ -44,8 +44,32 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""RBump"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""c5f0223f-8ab2-4eb3-81b4-8b25b3415275"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""LShouder"",
+                    ""type"": ""Button"",
+                    ""id"": ""73843978-ec37-4823-bb41-63b71b113f4b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""RShouder"",
+                    ""type"": ""Button"",
+                    ""id"": ""0ad62e3b-abea-4893-aaed-837a629e95d2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""LRShouder"",
+                    ""type"": ""Button"",
+                    ""id"": ""8ca01551-4ed9-4a32-8269-50d7c5746328"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -227,6 +251,50 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                     ""action"": ""RBump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""439f769b-b5c6-454e-a370-a0b7fd1792a5"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LShouder"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ac8182f3-5dbd-433f-aef1-a1dec136c756"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RShouder"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""885b918f-17c3-46bd-8f0c-ff2f234d22c0"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LRShouder"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""78e9ab5d-7e9c-44fc-810f-45538cff8509"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LRShouder"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -239,6 +307,9 @@ public class @PlayerControl : IInputActionCollection, IDisposable
         m_Control_RightStick = m_Control.FindAction("RightStick", throwIfNotFound: true);
         m_Control_LBump = m_Control.FindAction("LBump", throwIfNotFound: true);
         m_Control_RBump = m_Control.FindAction("RBump", throwIfNotFound: true);
+        m_Control_LShouder = m_Control.FindAction("LShouder", throwIfNotFound: true);
+        m_Control_RShouder = m_Control.FindAction("RShouder", throwIfNotFound: true);
+        m_Control_LRShouder = m_Control.FindAction("LRShouder", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -292,6 +363,9 @@ public class @PlayerControl : IInputActionCollection, IDisposable
     private readonly InputAction m_Control_RightStick;
     private readonly InputAction m_Control_LBump;
     private readonly InputAction m_Control_RBump;
+    private readonly InputAction m_Control_LShouder;
+    private readonly InputAction m_Control_RShouder;
+    private readonly InputAction m_Control_LRShouder;
     public struct ControlActions
     {
         private @PlayerControl m_Wrapper;
@@ -300,6 +374,9 @@ public class @PlayerControl : IInputActionCollection, IDisposable
         public InputAction @RightStick => m_Wrapper.m_Control_RightStick;
         public InputAction @LBump => m_Wrapper.m_Control_LBump;
         public InputAction @RBump => m_Wrapper.m_Control_RBump;
+        public InputAction @LShouder => m_Wrapper.m_Control_LShouder;
+        public InputAction @RShouder => m_Wrapper.m_Control_RShouder;
+        public InputAction @LRShouder => m_Wrapper.m_Control_LRShouder;
         public InputActionMap Get() { return m_Wrapper.m_Control; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -321,6 +398,15 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                 @RBump.started -= m_Wrapper.m_ControlActionsCallbackInterface.OnRBump;
                 @RBump.performed -= m_Wrapper.m_ControlActionsCallbackInterface.OnRBump;
                 @RBump.canceled -= m_Wrapper.m_ControlActionsCallbackInterface.OnRBump;
+                @LShouder.started -= m_Wrapper.m_ControlActionsCallbackInterface.OnLShouder;
+                @LShouder.performed -= m_Wrapper.m_ControlActionsCallbackInterface.OnLShouder;
+                @LShouder.canceled -= m_Wrapper.m_ControlActionsCallbackInterface.OnLShouder;
+                @RShouder.started -= m_Wrapper.m_ControlActionsCallbackInterface.OnRShouder;
+                @RShouder.performed -= m_Wrapper.m_ControlActionsCallbackInterface.OnRShouder;
+                @RShouder.canceled -= m_Wrapper.m_ControlActionsCallbackInterface.OnRShouder;
+                @LRShouder.started -= m_Wrapper.m_ControlActionsCallbackInterface.OnLRShouder;
+                @LRShouder.performed -= m_Wrapper.m_ControlActionsCallbackInterface.OnLRShouder;
+                @LRShouder.canceled -= m_Wrapper.m_ControlActionsCallbackInterface.OnLRShouder;
             }
             m_Wrapper.m_ControlActionsCallbackInterface = instance;
             if (instance != null)
@@ -337,6 +423,15 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                 @RBump.started += instance.OnRBump;
                 @RBump.performed += instance.OnRBump;
                 @RBump.canceled += instance.OnRBump;
+                @LShouder.started += instance.OnLShouder;
+                @LShouder.performed += instance.OnLShouder;
+                @LShouder.canceled += instance.OnLShouder;
+                @RShouder.started += instance.OnRShouder;
+                @RShouder.performed += instance.OnRShouder;
+                @RShouder.canceled += instance.OnRShouder;
+                @LRShouder.started += instance.OnLRShouder;
+                @LRShouder.performed += instance.OnLRShouder;
+                @LRShouder.canceled += instance.OnLRShouder;
             }
         }
     }
@@ -347,5 +442,8 @@ public class @PlayerControl : IInputActionCollection, IDisposable
         void OnRightStick(InputAction.CallbackContext context);
         void OnLBump(InputAction.CallbackContext context);
         void OnRBump(InputAction.CallbackContext context);
+        void OnLShouder(InputAction.CallbackContext context);
+        void OnRShouder(InputAction.CallbackContext context);
+        void OnLRShouder(InputAction.CallbackContext context);
     }
 }

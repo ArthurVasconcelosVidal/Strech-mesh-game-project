@@ -2,44 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum MovimentState { 
-    normalMoviment,
-    backHandMoviment
-}
-
 public class MovimentMamager : MonoBehaviour{
     public PlayerManager playerManager;
 
     [Header("Movimentation")]
-    [SerializeField] MovimentState movimentState = MovimentState.normalMoviment;
     [SerializeField] float velocity;
     [SerializeField] float rotationSpeed;
 
     void FixedUpdate(){
-        switch (movimentState){
-            case MovimentState.normalMoviment:
-                NormalMoviment();
-                break;
-            case MovimentState.backHandMoviment:
-                BackHandActiveMoviment();
-                break;
-        }
+        Moviment();
 
     }
 
-    void NormalMoviment() {
-        Vector3 direction = RelativeToCamDirection();
+    void Moviment() {
+        Vector3 direction = RelativeToDirection(playerManager.inputManager.leftStick, Camera.main.transform.forward, Camera.main.transform.right, transform.up);
         playerManager.rigidbody.MovePosition(transform.position + direction.normalized * velocity * Time.fixedDeltaTime);
         if (direction != Vector3.zero) RotateObject(direction, playerManager.meshObject, rotationSpeed);
-    }
-
-    void BackHandActiveMoviment() {
-        Vector3 LSDirection = transform.forward * playerManager.inputManager.leftStick.y + transform.right * playerManager.inputManager.leftStick.x;
-        playerManager.rigidbody.MovePosition(transform.position + LSDirection.normalized * velocity * Time.fixedDeltaTime);
-
-        float selfRotationSpeed = 1;
-        Vector3 RSDirection = transform.right * playerManager.inputManager.rightStick.x;
-        if (RSDirection != Vector3.zero)  RotateObject(RSDirection, this.gameObject, selfRotationSpeed);
     }
 
     public void RotateObject(Vector3 direction, GameObject objectToBeRotated, float rotationSpeed) {
@@ -47,20 +25,11 @@ public class MovimentMamager : MonoBehaviour{
         objectToBeRotated.transform.rotation = Quaternion.Lerp(objectToBeRotated.transform.rotation, newRotation, rotationSpeed * Time.fixedDeltaTime);
     }
 
-    Vector3 RelativeToCamDirection() {
-        Vector3 camF = Vector3.ProjectOnPlane(Camera.main.transform.forward, transform.up);
-        Vector3 camR = Vector3.ProjectOnPlane(Camera.main.transform.right, transform.up);
-        Vector3 finalDirection = camF * playerManager.inputManager.leftStick.y + camR * playerManager.inputManager.leftStick.x;
+    public Vector3 RelativeToDirection(Vector3 stickDirection, Vector3 directionFoward, Vector3 directionRight, Vector3 normalPlaneProjection) {
+        Vector3 dirF = Vector3.ProjectOnPlane(directionFoward, normalPlaneProjection);
+        Vector3 dirR = Vector3.ProjectOnPlane(directionRight, normalPlaneProjection);
+        Vector3 finalDirection = dirF * stickDirection.y + dirR * stickDirection.x;
         return finalDirection;
     }
-
-    public void SwitchMovimentState(MovimentState movimentState) {
-        this.movimentState = movimentState;
-    }
-
-    public MovimentState GetMovimentState() {
-        return movimentState;
-    }
          
-
 }

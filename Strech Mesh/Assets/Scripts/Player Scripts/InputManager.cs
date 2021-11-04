@@ -36,11 +36,32 @@ public class InputManager : MonoBehaviour{
         };
 
         playerControl.Control.RBump.started += ctx => {
-            playerManager.backHandBehaviour.PinchObject(true);
+            Debug.Log("comeco");  
+            //playerManager.backHandBehaviour.PinchObject(true);
+        };
+
+        playerControl.Control.RBump.performed += ctx => {
+            Debug.Log(ctx.ReadValue<float>());
         };
 
         playerControl.Control.RBump.canceled += ctx => {
-            playerManager.backHandBehaviour.PinchObject(false);
+            Debug.Log("termino");
+            //playerManager.backHandBehaviour.PinchObject(false);
+        };
+
+        playerControl.Control.RShouder.performed += ctx => {
+            playerManager.cameraManager.MoveCam(-1);
+            //Debug.Log("ta la");
+        };
+
+        playerControl.Control.LShouder.performed += ctx => {
+            playerManager.cameraManager.MoveCam(1);
+            //Debug.Log("n ta la");
+        };
+
+        playerControl.Control.LRShouder.canceled += ctx =>{
+            playerManager.cameraManager.StopMoveCam();
+            Debug.Log("canceled");
         };
     }
 
