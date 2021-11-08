@@ -11,7 +11,6 @@ public class MovimentMamager : MonoBehaviour{
 
     void FixedUpdate(){
         Moviment();
-
     }
 
     void Moviment() {

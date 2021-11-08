@@ -25,14 +25,15 @@ public class InputManager : MonoBehaviour{
 
         playerControl.Control.RightStick.canceled += ctx => {
             rightStick = Vector2.zero;
+            playerManager.backHandBehaviour.BackHandMovimentHasStoped();
         };
 
         playerControl.Control.LBump.started += ctx => {
-            playerManager.backHandBehaviour.ActiveHand(true);
+            
         };
 
         playerControl.Control.LBump.canceled += ctx => {
-            playerManager.backHandBehaviour.ActiveHand(false);
+            //playerManager.backHandBehaviour.ActiveHand(false);
         };
 
         playerControl.Control.RBump.started += ctx => {
@@ -46,7 +47,6 @@ public class InputManager : MonoBehaviour{
 
         playerControl.Control.RBump.canceled += ctx => {
             Debug.Log("termino");
-            //playerManager.backHandBehaviour.PinchObject(false);
         };
 
         playerControl.Control.RShouder.performed += ctx => {
@@ -61,7 +61,7 @@ public class InputManager : MonoBehaviour{
 
         playerControl.Control.LRShouder.canceled += ctx =>{
             playerManager.cameraManager.StopMoveCam();
-            Debug.Log("canceled");
+            //Debug.Log("canceled");
         };
     }
 

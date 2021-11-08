@@ -8,11 +8,14 @@ public class BackHandBehaviour : MonoBehaviour{
     [SerializeField] GameObject aimPoint;
     [SerializeField] GameObject restingPoint;
     [SerializeField] Vector3 handMovimentLimits;
+    [SerializeField] Vector3 moveDirection;
     [SerializeField] float maxDistance;
     [SerializeField] float moveSpeed;
     [SerializeField] float speedToRestPoint;
     [SerializeField] float handRotationSpeed;
+    [SerializeField] float timeToRest;
     SoftBodyControl softBodyControl = null;
+    bool restHand = false;
 
     void FixedUpdate(){
         HandMoviment();
@@ -26,12 +29,25 @@ public class BackHandBehaviour : MonoBehaviour{
         ClampedMoviment();
     }
 
-    void HandMoviment() {
-        Vector3 direction = transform.up * playerManager.inputManager.rightStick.y + Camera.main.transform.right * playerManager.inputManager.rightStick.x;
-        if (direction != Vector3.zero)
-            aimPoint.transform.position += direction.normalized * moveSpeed * Time.fixedDeltaTime;
-        else
+    void HandMoviment(){
+        moveDirection = transform.up * playerManager.inputManager.rightStick.y + Camera.main.transform.right * playerManager.inputManager.rightStick.x;
+        if (moveDirection != Vector3.zero){
+            aimPoint.transform.position += moveDirection.normalized * moveSpeed * Time.fixedDeltaTime;
+        }
+    }
+
+    public void BackHandMovimentHasStoped() {
+        StopCoroutine("MoveToTheRestPoint");
+        StartCoroutine("MoveToTheRestPoint");
+    }
+
+    IEnumerator MoveToTheRestPoint(){
+        yield return new WaitForSeconds(timeToRest);
+        while (aimPoint.transform.position != restingPoint.transform.position && moveDirection == Vector3.zero){
             aimPoint.transform.position = Vector3.Lerp(aimPoint.transform.position, restingPoint.transform.position, speedToRestPoint * Time.fixedDeltaTime);
+            yield return null;
+        }
+        Debug.Log("Has Stopped");
     }
 
     void HandRotation() {
@@ -47,32 +63,6 @@ public class BackHandBehaviour : MonoBehaviour{
         objectPosition.z = Mathf.Clamp(objectPosition.z, -handMovimentLimits.z, handMovimentLimits.z);
         aimPoint.transform.localPosition = objectPosition;
     }
-
-    public void ActiveHand(bool handState = true) {
-        if (handState) StartCoroutine("HandPinchBehaviour");
-    }
-
-    IEnumerator HandPinchBehaviour() {
-        yield return null;
-    }
-    /*
-    public void PinchObject(bool grabbing = true){
-        if (grabbing){
-            RaycastHit objectHit = StretchPoint();
-            if (objectHit.transform && objectHit.transform.TryGetComponent(out softBodyControl)){
-                if (softBodyControl.AddMeshDeformation(objectHit.point)){
-                    softBodyControl.SetGrabbed(true);
-                    aimPoint.transform.position = objectHit.point;
-                }
-                else softBodyControl = null;
-            }
-        }
-        else if (softBodyControl) {
-            softBodyControl.SetGrabbed(false);
-            softBodyControl = null;
-        }      
-    }
-    */
     RaycastHit StretchPoint(Vector3 direction, Vector3 startPosition) {
         RaycastHit hit;
         Physics.Raycast(startPosition, direction, out hit, maxDistance);
