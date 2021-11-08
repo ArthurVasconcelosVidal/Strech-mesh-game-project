@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class BackHandBehaviour : MonoBehaviour{
     public PlayerManager playerManager;
+    [Header("Points")]
     [SerializeField] GameObject aimPoint;
     [SerializeField] GameObject restingPoint;
-    [SerializeField] Vector3 handMovimentLimits;
+    [Header("Limits")]
     [SerializeField] float handRadiusLimit;
-    [SerializeField] float maxDistance;
+    [SerializeField] float maxGrabDistance;
+    [Header("Speed")]
     [SerializeField] float moveSpeed;
     [SerializeField] float speedToRestPoint;
     [SerializeField] float handRotationSpeed;
+    [Header("Timer")]
     [SerializeField] float timeToRest;
     Vector3 targetPoint;
-    [SerializeField] Vector3 moveDirection;// ForDebug
-    float clampedPosition;
+    Vector3 moveDirection;
     bool isGrabing;
     SoftBodyControl softBodyControl = null;
 
@@ -28,7 +30,7 @@ public class BackHandBehaviour : MonoBehaviour{
 
         if (!isGrabing){
             HandRotation();
-            targetPoint = aimPoint.transform.position + (aimPoint.transform.forward * maxDistance);
+            targetPoint = aimPoint.transform.position + (aimPoint.transform.forward * maxGrabDistance);
         }
 
         if (softBodyControl){
@@ -42,9 +44,8 @@ public class BackHandBehaviour : MonoBehaviour{
 
     void HandMoviment(){
         moveDirection = transform.up * playerManager.InputManager.rightStick.y + Camera.main.transform.right * playerManager.InputManager.rightStick.x;
-        if (moveDirection != Vector3.zero){
+        if (moveDirection != Vector3.zero)
             aimPoint.transform.position += moveDirection.normalized * moveSpeed * Time.fixedDeltaTime;
-        }
     }
 
     void HandRotation() {
@@ -83,7 +84,7 @@ public class BackHandBehaviour : MonoBehaviour{
 
     RaycastHit StretchPoint(Vector3 direction, Vector3 startPosition) {
         RaycastHit hit;
-        Physics.Raycast(startPosition, direction, out hit, maxDistance);
+        Physics.Raycast(startPosition, direction, out hit, maxGrabDistance);
         return hit;
     }
 
@@ -91,7 +92,6 @@ public class BackHandBehaviour : MonoBehaviour{
         Color color = Color.blue + Color.green;
         color.a = 0.2f;
         Gizmos.color = color;
-        //Gizmos.DrawCube(transform.position, handMovimentLimits*2);
         Gizmos.DrawSphere(transform.position, handRadiusLimit);
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(targetPoint, 0.5f);
