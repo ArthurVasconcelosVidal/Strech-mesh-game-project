@@ -777,15 +777,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerManager: {fileID: 385411162}
-  backHandObject: {fileID: 199609571}
   aimPoint: {fileID: 20523703}
   restingPoint: {fileID: 1355736513}
   handMovimentLimits: {x: 5, y: 5, z: 5}
-  maxDistance: 10
+  handRadiusLimit: 5.8
+  maxDistance: 5
   moveSpeed: 5
-  speedToRestPoint: 2.5
+  speedToRestPoint: 5
   handRotationSpeed: 2
-  timeToRest: 0
+  timeToRest: 2
+  speedToTargetPoint: 0
+  moveDirection: {x: 0, y: 0, z: 0}
 --- !u!1 &462533234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,7 +1310,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937903862}
-  m_LocalRotation: {x: 0.28978413, y: -0.00000001646809, z: 0.000000004986136, w: 0.95709205}
+  m_LocalRotation: {x: 0.28978413, y: 0.000000016468093, z: -0.0000000049861373, w: 0.95709205}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

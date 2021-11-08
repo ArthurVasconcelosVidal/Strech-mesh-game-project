@@ -4,22 +4,33 @@ using UnityEngine;
 
 public class BackHandBehaviour : MonoBehaviour{
     public PlayerManager playerManager;
-    [SerializeField] GameObject backHandObject; //Provisorio
     [SerializeField] GameObject aimPoint;
     [SerializeField] GameObject restingPoint;
     [SerializeField] Vector3 handMovimentLimits;
-    [SerializeField] Vector3 moveDirection;
+    [SerializeField] float handRadiusLimit;
     [SerializeField] float maxDistance;
     [SerializeField] float moveSpeed;
     [SerializeField] float speedToRestPoint;
     [SerializeField] float handRotationSpeed;
     [SerializeField] float timeToRest;
+    Vector3 targetPoint;
+    [SerializeField] Vector3 moveDirection;// ForDebug
+    float clampedPosition;
+    bool isGrabing;
     SoftBodyControl softBodyControl = null;
-    bool restHand = false;
+
+    private void Start(){
+        StartCoroutine("MoveToTheRestPoint", 0);
+    }
 
     void FixedUpdate(){
         HandMoviment();
-        HandRotation();
+
+        if (!isGrabing){
+            HandRotation();
+            targetPoint = aimPoint.transform.position + (aimPoint.transform.forward * maxDistance);
+        }
+
         if (softBodyControl){
             softBodyControl.SetHandlePosition(aimPoint.transform.position);
         }
@@ -36,20 +47,6 @@ public class BackHandBehaviour : MonoBehaviour{
         }
     }
 
-    public void BackHandMovimentHasStoped() {
-        StopCoroutine("MoveToTheRestPoint");
-        StartCoroutine("MoveToTheRestPoint");
-    }
-
-    IEnumerator MoveToTheRestPoint(){
-        yield return new WaitForSeconds(timeToRest);
-        while (aimPoint.transform.position != restingPoint.transform.position && moveDirection == Vector3.zero){
-            aimPoint.transform.position = Vector3.Lerp(aimPoint.transform.position, restingPoint.transform.position, speedToRestPoint * Time.fixedDeltaTime);
-            yield return null;
-        }
-        Debug.Log("Has Stopped");
-    }
-
     void HandRotation() {
         Vector3 direction = Vector3.ProjectOnPlane(Camera.main.transform.forward, transform.up);
         Quaternion newRotation = Quaternion.LookRotation(direction.normalized, transform.up);
@@ -57,12 +54,33 @@ public class BackHandBehaviour : MonoBehaviour{
     }
 
     void ClampedMoviment() {
-        Vector3 objectPosition = aimPoint.transform.localPosition;
-        objectPosition.x = Mathf.Clamp(objectPosition.x, -handMovimentLimits.x, handMovimentLimits.x);
-        objectPosition.y = Mathf.Clamp(objectPosition.y, -handMovimentLimits.y, handMovimentLimits.y);
-        objectPosition.z = Mathf.Clamp(objectPosition.z, -handMovimentLimits.z, handMovimentLimits.z);
-        aimPoint.transform.localPosition = objectPosition;
+        Vector3 centerPosition = transform.position; 
+        Vector3 offset = aimPoint.transform.position - centerPosition;
+        aimPoint.transform.position = centerPosition + Vector3.ClampMagnitude(offset, handRadiusLimit);
     }
+
+    IEnumerator MoveToTheRestPoint(float timeToRest){
+        yield return new WaitForSeconds(timeToRest);
+        while (aimPoint.transform.position != restingPoint.transform.position && moveDirection == Vector3.zero){
+            aimPoint.transform.position = Vector3.Lerp(aimPoint.transform.position, restingPoint.transform.position, speedToRestPoint * Time.fixedDeltaTime);
+            yield return null;
+        }
+    }
+
+    public void TryGrabSomething(bool state) {
+        isGrabing = state;
+        if (!state){
+            StartCoroutine("MoveToTheRestPoint", timeToRest);
+        }
+    }
+
+    public void BackHandMovimentHasStoped() {
+        if (!isGrabing){
+            StopCoroutine("MoveToTheRestPoint");
+            StartCoroutine("MoveToTheRestPoint", timeToRest);
+        }
+    }
+
     RaycastHit StretchPoint(Vector3 direction, Vector3 startPosition) {
         RaycastHit hit;
         Physics.Raycast(startPosition, direction, out hit, maxDistance);
@@ -70,11 +88,13 @@ public class BackHandBehaviour : MonoBehaviour{
     }
 
     void OnDrawGizmos(){
-        Color color = Color.blue;
+        Color color = Color.blue + Color.green;
         color.a = 0.2f;
         Gizmos.color = color;
-        Gizmos.DrawCube(backHandObject.transform.position, handMovimentLimits*2);
-
+        //Gizmos.DrawCube(transform.position, handMovimentLimits*2);
+        Gizmos.DrawSphere(transform.position, handRadiusLimit);
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(targetPoint, 0.5f);
     }
 
 }

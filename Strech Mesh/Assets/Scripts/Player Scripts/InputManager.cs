@@ -42,10 +42,12 @@ public class InputManager : MonoBehaviour{
         };
 
         playerControl.Control.RBump.performed += ctx => {
+            playerManager.BackHandBehaviour.TryGrabSomething(true);
             Debug.Log(ctx.ReadValue<float>());
         };
 
         playerControl.Control.RBump.canceled += ctx => {
+            playerManager.BackHandBehaviour.TryGrabSomething(false);
             Debug.Log("termino");
         };
 
