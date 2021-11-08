@@ -14,9 +14,9 @@ public class MovimentMamager : MonoBehaviour{
     }
 
     void Moviment() {
-        Vector3 direction = RelativeToDirection(playerManager.inputManager.leftStick, Camera.main.transform.forward, Camera.main.transform.right, transform.up);
-        playerManager.rigidbody.MovePosition(transform.position + direction.normalized * velocity * Time.fixedDeltaTime);
-        if (direction != Vector3.zero) RotateObject(direction, playerManager.meshObject, rotationSpeed);
+        Vector3 direction = RelativeToDirection(playerManager.InputManager.leftStick, Camera.main.transform.forward, Camera.main.transform.right, transform.up);
+        playerManager.Rigidbody.MovePosition(transform.position + direction.normalized * velocity * Time.fixedDeltaTime);
+        if (direction != Vector3.zero) RotateObject(direction, playerManager.MeshObject, rotationSpeed);
     }
 
     public void RotateObject(Vector3 direction, GameObject objectToBeRotated, float rotationSpeed) {

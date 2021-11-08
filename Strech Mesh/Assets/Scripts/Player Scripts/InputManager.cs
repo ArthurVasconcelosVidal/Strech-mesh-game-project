@@ -25,7 +25,7 @@ public class InputManager : MonoBehaviour{
 
         playerControl.Control.RightStick.canceled += ctx => {
             rightStick = Vector2.zero;
-            playerManager.backHandBehaviour.BackHandMovimentHasStoped();
+            playerManager.BackHandBehaviour.BackHandMovimentHasStoped();
         };
 
         playerControl.Control.LBump.started += ctx => {
@@ -50,17 +50,17 @@ public class InputManager : MonoBehaviour{
         };
 
         playerControl.Control.RShouder.performed += ctx => {
-            playerManager.cameraManager.MoveCam(-1);
+            playerManager.CameraManager.MoveCam(-1);
             //Debug.Log("ta la");
         };
 
         playerControl.Control.LShouder.performed += ctx => {
-            playerManager.cameraManager.MoveCam(1);
+            playerManager.CameraManager.MoveCam(1);
             //Debug.Log("n ta la");
         };
 
         playerControl.Control.LRShouder.canceled += ctx =>{
-            playerManager.cameraManager.StopMoveCam();
+            playerManager.CameraManager.StopMoveCam();
             //Debug.Log("canceled");
         };
     }

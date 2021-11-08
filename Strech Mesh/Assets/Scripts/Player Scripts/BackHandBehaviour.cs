@@ -30,7 +30,7 @@ public class BackHandBehaviour : MonoBehaviour{
     }
 
     void HandMoviment(){
-        moveDirection = transform.up * playerManager.inputManager.rightStick.y + Camera.main.transform.right * playerManager.inputManager.rightStick.x;
+        moveDirection = transform.up * playerManager.InputManager.rightStick.y + Camera.main.transform.right * playerManager.InputManager.rightStick.x;
         if (moveDirection != Vector3.zero){
             aimPoint.transform.position += moveDirection.normalized * moveSpeed * Time.fixedDeltaTime;
         }

@@ -17,8 +17,8 @@ public class CameraManager : MonoBehaviour{
     }
 
     void NormalCameraMoviment(){
-        normalLookCM.m_XAxis.Value += playerManager.inputManager.rightStick.x * camSpeedX * Time.fixedDeltaTime;
-        normalLookCM.m_YAxis.Value += playerManager.inputManager.rightStick.y * camSpeedY * Time.fixedDeltaTime;
+        normalLookCM.m_XAxis.Value += playerManager.InputManager.rightStick.x * camSpeedX * Time.fixedDeltaTime;
+        normalLookCM.m_YAxis.Value += playerManager.InputManager.rightStick.y * camSpeedY * Time.fixedDeltaTime;
     }
 
     public void MoveCam(float value) {
