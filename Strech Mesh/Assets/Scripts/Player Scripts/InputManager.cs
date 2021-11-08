@@ -25,22 +25,45 @@ public class InputManager : MonoBehaviour{
 
         playerControl.Control.RightStick.canceled += ctx => {
             rightStick = Vector2.zero;
+            playerManager.BackHandBehaviour.BackHandMovimentHasStoped();
         };
 
         playerControl.Control.LBump.started += ctx => {
-            playerManager.backHandBehaviour.ActiveHand(true);
+            
         };
 
         playerControl.Control.LBump.canceled += ctx => {
-            playerManager.backHandBehaviour.ActiveHand(false);
+            //playerManager.backHandBehaviour.ActiveHand(false);
         };
 
         playerControl.Control.RBump.started += ctx => {
-            playerManager.backHandBehaviour.PinchObject(true);
+            Debug.Log("comeco");  
+            //playerManager.backHandBehaviour.PinchObject(true);
+        };
+
+        playerControl.Control.RBump.performed += ctx => {
+            playerManager.BackHandBehaviour.TryGrabSomething(true);
+            Debug.Log(ctx.ReadValue<float>());
         };
 
         playerControl.Control.RBump.canceled += ctx => {
-            playerManager.backHandBehaviour.PinchObject(false);
+            playerManager.BackHandBehaviour.TryGrabSomething(false);
+            Debug.Log("termino");
+        };
+
+        playerControl.Control.RShouder.performed += ctx => {
+            playerManager.CameraManager.MoveCam(-1);
+            //Debug.Log("ta la");
+        };
+
+        playerControl.Control.LShouder.performed += ctx => {
+            playerManager.CameraManager.MoveCam(1);
+            //Debug.Log("n ta la");
+        };
+
+        playerControl.Control.LRShouder.canceled += ctx =>{
+            playerManager.CameraManager.StopMoveCam();
+            //Debug.Log("canceled");
         };
     }
 

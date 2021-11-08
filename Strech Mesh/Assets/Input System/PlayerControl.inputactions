@@ -31,8 +31,32 @@
                 },
                 {
                     "name": "RBump",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "c5f0223f-8ab2-4eb3-81b4-8b25b3415275",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LShouder",
+                    "type": "Button",
+                    "id": "73843978-ec37-4823-bb41-63b71b113f4b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RShouder",
+                    "type": "Button",
+                    "id": "0ad62e3b-abea-4893-aaed-837a629e95d2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LRShouder",
+                    "type": "Button",
+                    "id": "8ca01551-4ed9-4a32-8269-50d7c5746328",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -212,6 +236,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "RBump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "439f769b-b5c6-454e-a370-a0b7fd1792a5",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LShouder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ac8182f3-5dbd-433f-aef1-a1dec136c756",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RShouder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "885b918f-17c3-46bd-8f0c-ff2f234d22c0",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LRShouder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "78e9ab5d-7e9c-44fc-810f-45538cff8509",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LRShouder",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
