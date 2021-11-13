@@ -37,18 +37,19 @@ public class InputManager : MonoBehaviour{
         };
 
         playerControl.Control.RBump.started += ctx => {
-            Debug.Log("comeco");  
+            //Debug.Log("comeco");  
+            playerManager.BackHandBehaviour.TryGrabSomething(true);
             //playerManager.backHandBehaviour.PinchObject(true);
         };
 
         playerControl.Control.RBump.performed += ctx => {
-            playerManager.BackHandBehaviour.TryGrabSomething(true);
-            Debug.Log(ctx.ReadValue<float>());
+            
+            //Debug.Log(ctx.ReadValue<float>());
         };
 
         playerControl.Control.RBump.canceled += ctx => {
             playerManager.BackHandBehaviour.TryGrabSomething(false);
-            Debug.Log("termino");
+            //Debug.Log("termino");
         };
 
         playerControl.Control.RShouder.performed += ctx => {

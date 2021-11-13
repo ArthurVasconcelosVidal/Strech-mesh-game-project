@@ -34,7 +34,6 @@ public class CameraManager : MonoBehaviour{
     IEnumerator MoveCamLeftRight(float value) {
         while (true){
             normalLookCM.m_XAxis.Value += value * camSpeedX * Time.fixedDeltaTime;
-            Debug.Log("Ta rodando");
             yield return null;
         }
     }
