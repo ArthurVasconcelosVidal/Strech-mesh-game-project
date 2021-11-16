@@ -38,7 +38,6 @@ public class HandRiggingController : MonoBehaviour {
     }
 
     IEnumerator GrabbingAnimation(bool state) {
-
         do {
             thumbAim.GetComponent<ChainIKConstraint>().weight = grabAnimation.Evaluate(currentValue);
             midAim.GetComponent<ChainIKConstraint>().weight = grabAnimation.Evaluate(currentValue);

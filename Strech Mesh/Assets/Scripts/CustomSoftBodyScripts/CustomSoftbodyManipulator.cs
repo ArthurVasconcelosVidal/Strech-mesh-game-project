@@ -49,7 +49,6 @@ public class CustomSoftbodyManipulator : MonoBehaviour{
         handleObject.GetComponent<SpringJoint>().connectedBody = anchorObject.GetComponent<Rigidbody>();
         
         renderer = GetComponent<Renderer>();
-        //renderer.material = Instantiate(renderer.material);
 
         anchorObject.transform.position = strechPoint;
         handleObject.transform.position = strechPoint;

@@ -12,14 +12,13 @@ enum HandGrabState {
 public class BackHandBehaviour : MonoBehaviour {
     public PlayerManager playerManager;
     [SerializeField] HandRiggingController handRiggingController;
-    [SerializeField] HandGrabState handGrabState = HandGrabState.notGrabing; //Debug
+    HandGrabState handGrabState = HandGrabState.notGrabing;
 
     [Header("Points")]
     [SerializeField] GameObject aimPoint;
     [SerializeField] GameObject restingPoint;
     [SerializeField] GameObject radiusLimitCenterPoint;
     [Header("Limits")]
-    //[SerializeField] float defaultHandRadiusLimit;
     [SerializeField] float maxGrabDistance;
     [SerializeField] [Range(-1, 1)] float grabPositionOffset = -1;
     float handRadiusLimit;
@@ -31,9 +30,7 @@ public class BackHandBehaviour : MonoBehaviour {
     [SerializeField] float timeToRest;
     Vector3 targetPoint;
     Vector3 moveDirection;
-    Vector3 grabHitPoint;
-    //[SerializeField]bool isGrabing;//Debug
-    [SerializeField]SoftBodyControl softBodyControl = null;
+    SoftBodyControl softBodyControl = null;
 
     private void Start() {
         StartCoroutine("MoveToTheRestPoint", 0);
@@ -61,31 +58,16 @@ public class BackHandBehaviour : MonoBehaviour {
             softBodyControl.SetHandlePosition(handRiggingController.Pointer.transform.position + (handRiggingController.Pointer.transform.forward * grabPositionOffset));
             break;
       }
-
-        /*if (!isGrabing) {
-            HandRotation();
-            HandMoviment();
-            targetPoint = aimPoint.transform.position + (aimPoint.transform.forward * maxGrabDistance);
-        }
-
-        if (softBodyControl) {
-            softBodyControl.SetHandlePosition(aimPoint.transform.position);
-        }*/
     }
 
     void LateUpdate() {
         if (handGrabState != HandGrabState.tryingToGrab){
             ClampedMoviment();
         }
-
-        /*if (!isGrabing) {
-            ClampedMoviment();
-        }*/
     }
 
     void HandMoviment() {
         moveDirection = transform.up * playerManager.InputManager.rightStick.y + Camera.main.transform.right * playerManager.InputManager.rightStick.x;
-        //aimPoint.transform.position = handRiggingController.HandPosition;
         if (moveDirection != Vector3.zero)
             aimPoint.transform.position += moveDirection.normalized * moveSpeed * Time.fixedDeltaTime;
     }
@@ -107,10 +89,6 @@ public class BackHandBehaviour : MonoBehaviour {
             aimPoint.transform.position = Vector3.Lerp(aimPoint.transform.position, restingPoint.transform.position, speedToRestPoint * Time.fixedDeltaTime);
             yield return null;
         }
-        /*while (aimPoint.transform.position != restingPoint.transform.position && moveDirection == Vector3.zero && !isGrabing) {
-            aimPoint.transform.position = Vector3.Lerp(aimPoint.transform.position, restingPoint.transform.position, speedToRestPoint * Time.fixedDeltaTime);
-            yield return null;
-        }*/
     }
 
     public void TryGrabSomething(bool state) {
@@ -133,18 +111,11 @@ public class BackHandBehaviour : MonoBehaviour {
     }
 
     IEnumerator MoveToTargetPoint(){
-        Debug.Log("starto");
         while (aimPoint.transform.position != targetPoint && handGrabState == HandGrabState.tryingToGrab){
             aimPoint.transform.position = Vector3.Lerp(aimPoint.transform.position, targetPoint, moveSpeed * Time.fixedDeltaTime);
             Debug.DrawLine(aimPoint.transform.position, targetPoint, Color.green);
             yield return null;
         }
-        /*while (aimPoint.transform.position != targetPoint && isGrabing){
-            aimPoint.transform.position = Vector3.Lerp(aimPoint.transform.position, targetPoint, moveSpeed * Time.fixedDeltaTime);
-            Debug.DrawLine(aimPoint.transform.position, targetPoint, Color.green);
-            yield return null;
-        }*/
-        Debug.Log("fecho");
     }
 
     public void BackHandMovimentHasStoped() {
@@ -152,10 +123,6 @@ public class BackHandBehaviour : MonoBehaviour {
             StopCoroutine("MoveToTheRestPoint");
             StartCoroutine("MoveToTheRestPoint", timeToRest);
         }
-        /*if (!isGrabing){
-            StopCoroutine("MoveToTheRestPoint");
-            StartCoroutine("MoveToTheRestPoint", timeToRest);
-        }*/
     }
 
     RaycastHit StretchPoint(Vector3 direction, Vector3 startPosition) {
@@ -186,9 +153,6 @@ public class BackHandBehaviour : MonoBehaviour {
             Vector3 hitPoint = StretchPoint(handRiggingController.Pointer.transform.forward, handRiggingController.Pointer.transform.position).point;
             Grab(hitPoint);
         }
-    }
-    private void OnTriggerExit(Collider other){
-        //Debug.Log("Saiu meu bom");
     }
 
     void OnDrawGizmos(){
