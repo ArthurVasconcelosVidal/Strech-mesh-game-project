@@ -13,11 +13,20 @@ public class SoftBodyControl : MonoBehaviour{
     [SerializeField] GameObject anchorPrefab;
     [SerializeField] GameObject handlePrefab;
     [SerializeField] float timeToClearForces;
-    public float maxStrechDistance; 
+    public float maxStrechDistance;
+    Vector3 anchorPoint;
+
+    public Vector3 AnchorPoint { 
+        get {
+            if (softBodyManipulator) return anchorPoint;
+            else return Vector3.zero;
+        } 
+    }
 
     public bool AddMeshDeformation(Vector3 deformPosition){
         if (!softBodyManipulator){
             softBodyManipulator = transform.gameObject.AddComponent<CustomSoftbodyManipulator>();
+            anchorPoint = deformPosition;
             softBodyManipulator.InitializeMeshDeformation(deformPosition, anchorPrefab, handlePrefab, bodyHardness, deformationSphereRange, maxStrechDistance);
             return true;
         }else 
