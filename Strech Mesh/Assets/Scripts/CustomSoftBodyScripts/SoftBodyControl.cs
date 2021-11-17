@@ -13,7 +13,7 @@ public class SoftBodyControl : MonoBehaviour{
     [SerializeField] GameObject anchorPrefab;
     [SerializeField] GameObject handlePrefab;
     [SerializeField] float timeToClearForces;
-    public float maxStrechDistance;
+    [SerializeField] float maxStrechDistance;
     Vector3 anchorPoint;
 
     public Vector3 AnchorPoint { 
@@ -22,6 +22,8 @@ public class SoftBodyControl : MonoBehaviour{
             else return Vector3.zero;
         } 
     }
+
+    public float MaxStretchDistance { get { return maxStrechDistance; } }
 
     public bool AddMeshDeformation(Vector3 deformPosition){
         if (!softBodyManipulator){

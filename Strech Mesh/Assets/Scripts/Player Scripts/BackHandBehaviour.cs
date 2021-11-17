@@ -35,8 +35,6 @@ public class BackHandBehaviour : MonoBehaviour {
     private void Start() {
         StartCoroutine("MoveToTheRestPoint", 0);
         handRadiusLimit = handRiggingController.HandLenght;
-        //handRadiusLimit = defaultHandRadiusLimit;
-
     }
 
     void FixedUpdate() {
@@ -61,15 +59,25 @@ public class BackHandBehaviour : MonoBehaviour {
     }
 
     void LateUpdate() {
-        if (handGrabState != HandGrabState.tryingToGrab){
-            ClampedMoviment();
+        switch (handGrabState){
+            case HandGrabState.notGrabing:
+                ClampedMoviment();
+                break;
+            case HandGrabState.tryingToGrab:
+                //DoSomething
+                break;
+            case HandGrabState.grabing:
+                ClampedMoviment();
+                playerManager.MovimentMamager.ClampPlayerMoviment(handRiggingController.HandLenght + softBodyControl.MaxStretchDistance, softBodyControl.AnchorPoint);
+                break;
         }
     }
 
     void HandMoviment() {
+        aimPoint.transform.position = Vector3.Lerp(aimPoint.transform.position, handRiggingController.HandPosition, moveSpeed * Time.fixedDeltaTime);
         moveDirection = transform.up * playerManager.InputManager.rightStick.y + Camera.main.transform.right * playerManager.InputManager.rightStick.x;
-        if (moveDirection != Vector3.zero)
-            aimPoint.transform.position += moveDirection.normalized * moveSpeed * Time.fixedDeltaTime;
+        if (moveDirection != Vector3.zero) 
+            aimPoint.transform.position += moveDirection.normalized * moveSpeed * Time.fixedDeltaTime;   
     }
 
     void HandRotation() {
@@ -133,7 +141,7 @@ public class BackHandBehaviour : MonoBehaviour {
 
     void Grab(Vector3 hitPoint) {
         if (softBodyControl.AddMeshDeformation(hitPoint)){
-            handRadiusLimit = softBodyControl.maxStrechDistance;
+            handRadiusLimit = softBodyControl.MaxStretchDistance;
             radiusLimitCenterPoint.transform.position = hitPoint;
             softBodyControl.SetGrabbed(true);
             handGrabState = HandGrabState.grabing;
@@ -159,12 +167,15 @@ public class BackHandBehaviour : MonoBehaviour {
         Color color = Color.blue + Color.green;
         color.a = 0.2f;
         Gizmos.color = color;
-        //if(!isGrabing) Gizmos.DrawSphere(transform.position, handRadiusLimit);
         if (handGrabState != HandGrabState.tryingToGrab) Gizmos.DrawSphere(radiusLimitCenterPoint.transform.position, handRadiusLimit);
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(targetPoint, 0.5f);
         Gizmos.color = Color.green;
         Gizmos.DrawSphere(aimPoint.transform.position, 0.3f);
+        color = Color.red;
+        color.a = 0.2f;
+        Gizmos.color = color;
+        if (handGrabState == HandGrabState.grabing) Gizmos.DrawSphere(softBodyControl.AnchorPoint, handRiggingController.HandLenght + softBodyControl.MaxStretchDistance);
     }
 
 }

@@ -19,6 +19,12 @@ public class MovimentMamager : MonoBehaviour{
         if (direction != Vector3.zero) RotateObject(direction, playerManager.MeshObject, rotationSpeed);
     }
 
+    public void ClampPlayerMoviment(float areaRadius, Vector3 centerPoint) {
+        Vector3 offset = playerManager.Rigidbody.position - centerPoint;
+        Vector3 clampedPosition = centerPoint + Vector3.ClampMagnitude(offset, areaRadius);
+        if (transform.position != clampedPosition) transform.position = clampedPosition;
+    }
+
     public void RotateObject(Vector3 direction, GameObject objectToBeRotated, float rotationSpeed) {
         Quaternion newRotation = Quaternion.LookRotation(direction.normalized, transform.up);
         objectToBeRotated.transform.rotation = Quaternion.Lerp(objectToBeRotated.transform.rotation, newRotation, rotationSpeed * Time.fixedDeltaTime);

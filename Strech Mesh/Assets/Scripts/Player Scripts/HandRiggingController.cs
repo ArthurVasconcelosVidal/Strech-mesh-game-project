@@ -20,8 +20,11 @@ public class HandRiggingController : MonoBehaviour {
 
     public float HandLenght { get { return handLenght; } }
 
-    void Start(){
+    void Awake(){
         HandLenghtCount(rootGameObject, handGameObject, 0);
+    }
+
+    void Start(){
         currentValue = minValue;
         thumbAim.GetComponent<ChainIKConstraint>().weight = grabAnimation.Evaluate(minValue);
         midAim.GetComponent<ChainIKConstraint>().weight = grabAnimation.Evaluate(minValue);
