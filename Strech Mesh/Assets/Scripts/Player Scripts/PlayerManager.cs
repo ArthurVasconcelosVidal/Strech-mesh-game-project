@@ -11,6 +11,7 @@ public class PlayerManager : MonoBehaviour{
     [SerializeField] CameraManager cameraManager;
     [SerializeField] GameObject meshObject;
     [SerializeField] BackHandBehaviour backHandBehaviour;
+    [SerializeField] AnimationManager animationManager;
 
     public BackHandBehaviour BackHandBehaviour { get{ return backHandBehaviour; } }
     public Rigidbody Rigidbody { get{ return rigidbody; } }
@@ -19,6 +20,7 @@ public class PlayerManager : MonoBehaviour{
     public ActionManager ActionManager { get{ return actionManager; } }
     public CameraManager CameraManager { get{ return cameraManager; } }
     public GameObject MeshObject { get{ return meshObject; } }
+    public AnimationManager AnimationManager { get { return animationManager; } }
 
 
 }
