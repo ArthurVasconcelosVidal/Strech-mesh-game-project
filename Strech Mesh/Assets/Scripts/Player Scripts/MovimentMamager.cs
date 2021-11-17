@@ -15,8 +15,15 @@ public class MovimentMamager : MonoBehaviour{
 
     void Moviment() {
         Vector3 direction = RelativeToDirection(playerManager.InputManager.leftStick, Camera.main.transform.forward, Camera.main.transform.right, transform.up);
+        playerManager.AnimationManager.SetIdleToRunBlendTree(direction.magnitude);
         playerManager.Rigidbody.MovePosition(transform.position + direction.normalized * velocity * Time.fixedDeltaTime);
         if (direction != Vector3.zero) RotateObject(direction, playerManager.MeshObject, rotationSpeed);
+    }
+
+    public void ClampPlayerMoviment(float areaRadius, Vector3 centerPoint) {
+        Vector3 offset = playerManager.Rigidbody.position - centerPoint;
+        Vector3 clampedPosition = centerPoint + Vector3.ClampMagnitude(offset, areaRadius);
+        if (transform.position != clampedPosition) transform.position = clampedPosition;
     }
 
     public void RotateObject(Vector3 direction, GameObject objectToBeRotated, float rotationSpeed) {
