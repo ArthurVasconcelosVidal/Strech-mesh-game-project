@@ -24,7 +24,8 @@ public class BackHandBehaviour : MonoBehaviour {
     float handRadiusLimit;
     [Header("Speed")]
     [SerializeField] float moveSpeed;
-    [SerializeField] float speedToRestPoint;
+    [SerializeField] float toRestPointSpeed;
+    float toClampedSpaceSpeed;
     [SerializeField] float handRotationSpeed;
     [Header("Timer")]
     [SerializeField] float timeToRest;
@@ -52,7 +53,7 @@ public class BackHandBehaviour : MonoBehaviour {
           case HandGrabState.grabing:
             //DoSomething
             HandMoviment();
-            radiusLimitCenterPoint.transform.position = softBodyControl.AnchorPoint;
+            radiusLimitCenterPoint.transform.position = softBodyControl.SoftbodyManipulator.AnchorPoint;
             softBodyControl.SetHandlePosition(handRiggingController.Pointer.transform.position + (handRiggingController.Pointer.transform.forward * grabPositionOffset));
             break;
       }
@@ -68,7 +69,7 @@ public class BackHandBehaviour : MonoBehaviour {
                 break;
             case HandGrabState.grabing:
                 ClampedMoviment();
-                playerManager.MovimentMamager.ClampPlayerMoviment(handRiggingController.HandLenght + softBodyControl.MaxStretchDistance, softBodyControl.AnchorPoint);
+                playerManager.MovimentMamager.ClampPlayerMoviment(handRiggingController.HandLenght + softBodyControl.MaxStretchDistance, softBodyControl.SoftbodyManipulator.AnchorPoint);
                 break;
         }
     }
@@ -88,13 +89,14 @@ public class BackHandBehaviour : MonoBehaviour {
 
     void ClampedMoviment() {
         Vector3 offset = aimPoint.transform.position - radiusLimitCenterPoint.transform.position;
-        aimPoint.transform.position = radiusLimitCenterPoint.transform.position + Vector3.ClampMagnitude(offset, handRadiusLimit);
+        Vector3 finalPosition = radiusLimitCenterPoint.transform.position + Vector3.ClampMagnitude(offset, handRadiusLimit);
+        aimPoint.transform.position = Vector3.Lerp(aimPoint.transform.position, finalPosition, toClampedSpaceSpeed * Time.fixedDeltaTime);
     }
 
     IEnumerator MoveToTheRestPoint(float timeToRest) {
         yield return new WaitForSeconds(timeToRest);
         while (aimPoint.transform.position != restingPoint.transform.position && moveDirection == Vector3.zero && handGrabState == HandGrabState.notGrabing){
-            aimPoint.transform.position = Vector3.Lerp(aimPoint.transform.position, restingPoint.transform.position, speedToRestPoint * Time.fixedDeltaTime);
+            aimPoint.transform.position = Vector3.Lerp(aimPoint.transform.position, restingPoint.transform.position, toRestPointSpeed * Time.fixedDeltaTime);
             yield return null;
         }
     }
@@ -132,24 +134,26 @@ public class BackHandBehaviour : MonoBehaviour {
             StartCoroutine("MoveToTheRestPoint", timeToRest);
         }
     }
-
+    /*
     RaycastHit StretchPoint(Vector3 direction, Vector3 startPosition) {
         RaycastHit hit;
         Physics.Raycast(startPosition, direction, out hit, maxGrabDistance);
         return hit;
-    }
+    }*/
 
     void Grab(Vector3 hitPoint) {
         if (softBodyControl.AddMeshDeformation(hitPoint)){
             handRadiusLimit = softBodyControl.MaxStretchDistance;
             radiusLimitCenterPoint.transform.position = hitPoint;
             softBodyControl.SetGrabbed(true);
+            toClampedSpaceSpeed = softBodyControl.SoftbodyManipulator.StretchResistenceForce;
             handGrabState = HandGrabState.grabing;
         }
     } 
 
     void ReleaseGrab() {
         radiusLimitCenterPoint.transform.position = transform.position;
+        toClampedSpaceSpeed = moveSpeed;
         handRadiusLimit = handRiggingController.HandLenght;
         softBodyControl.SetGrabbed(false);
         softBodyControl = null;
@@ -158,7 +162,8 @@ public class BackHandBehaviour : MonoBehaviour {
     void OnTriggerEnter(Collider other){
         if (handGrabState == HandGrabState.tryingToGrab && other.gameObject.TryGetComponent(out softBodyControl)){
             //DoSomething
-            Vector3 hitPoint = StretchPoint(handRiggingController.Pointer.transform.forward, handRiggingController.Pointer.transform.position).point;
+            //Vector3 hitPoint = StretchPoint(handRiggingController.Pointer.transform.forward, handRiggingController.Pointer.transform.position).point;
+            Vector3 hitPoint = handRiggingController.Pointer.transform.position;
             Grab(hitPoint);
         }
     }
@@ -175,7 +180,7 @@ public class BackHandBehaviour : MonoBehaviour {
         color = Color.red;
         color.a = 0.2f;
         Gizmos.color = color;
-        if (handGrabState == HandGrabState.grabing) Gizmos.DrawSphere(softBodyControl.AnchorPoint, handRiggingController.HandLenght + softBodyControl.MaxStretchDistance);
+        if (handGrabState == HandGrabState.grabing) Gizmos.DrawSphere(softBodyControl.SoftbodyManipulator.AnchorPoint, handRiggingController.HandLenght + softBodyControl.MaxStretchDistance);
     }
 
 }
