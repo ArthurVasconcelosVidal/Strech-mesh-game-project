@@ -134,12 +134,6 @@ public class BackHandBehaviour : MonoBehaviour {
             StartCoroutine("MoveToTheRestPoint", timeToRest);
         }
     }
-    /*
-    RaycastHit StretchPoint(Vector3 direction, Vector3 startPosition) {
-        RaycastHit hit;
-        Physics.Raycast(startPosition, direction, out hit, maxGrabDistance);
-        return hit;
-    }*/
 
     void Grab(Vector3 hitPoint) {
         if (softBodyControl.AddMeshDeformation(hitPoint)){
@@ -161,8 +155,6 @@ public class BackHandBehaviour : MonoBehaviour {
 
     void OnTriggerEnter(Collider other){
         if (handGrabState == HandGrabState.tryingToGrab && other.gameObject.TryGetComponent(out softBodyControl)){
-            //DoSomething
-            //Vector3 hitPoint = StretchPoint(handRiggingController.Pointer.transform.forward, handRiggingController.Pointer.transform.position).point;
             Vector3 hitPoint = handRiggingController.Pointer.transform.position;
             Grab(hitPoint);
         }

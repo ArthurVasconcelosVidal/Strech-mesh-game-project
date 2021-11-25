@@ -105,6 +105,7 @@ public class CustomSoftbodyManipulator : MonoBehaviour{
     IEnumerator DestroyWhenStop(float time) {
         yield return new WaitForSeconds(time);
         float value = 0;
+        handleRb.isKinematic = true;
         while (handleRb.position != anchorObject.transform.position){
             value += Time.fixedDeltaTime;
             value = Mathf.Clamp01(value);
