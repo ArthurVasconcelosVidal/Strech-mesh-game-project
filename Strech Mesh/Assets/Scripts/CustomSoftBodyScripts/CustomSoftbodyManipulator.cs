@@ -109,8 +109,8 @@ public class CustomSoftbodyManipulator : MonoBehaviour{
         while (handleRb.position != anchorObject.transform.position){
             value += Time.fixedDeltaTime;
             value = Mathf.Clamp01(value);
-            handleRb.rotation = Quaternion.Lerp(handleRb.rotation, anchorObject.transform.rotation, value);
-            handleRb.position = Vector3.Lerp(handleRb.position, anchorObject.transform.position, value);
+            handleObject.transform.rotation = Quaternion.Lerp(handleRb.rotation, anchorObject.transform.rotation, value);
+            handleObject.transform.position = Vector3.Lerp(handleRb.position, anchorObject.transform.position, value);
             yield return null;
         }
         BehaviourDestroyer();

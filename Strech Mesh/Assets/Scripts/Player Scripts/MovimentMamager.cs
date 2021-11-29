@@ -15,7 +15,7 @@ public class MovimentMamager : MonoBehaviour{
 
     void Moviment() {
         Vector3 direction = RelativeToDirection(playerManager.InputManager.leftStick, Camera.main.transform.forward, Camera.main.transform.right, transform.up);
-        playerManager.AnimationManager.SetIdleToRunBlendTree(direction.magnitude);
+        playerManager.AnimationManager.SetIdleToRunBlendTree(direction.magnitude * 0.7f);
         playerManager.Rigidbody.MovePosition(transform.position + direction.normalized * velocity * Time.fixedDeltaTime);
         if (direction != Vector3.zero) RotateObject(direction, playerManager.MeshObject, rotationSpeed);
     }
