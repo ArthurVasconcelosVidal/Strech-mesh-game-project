@@ -9283,7 +9283,7 @@ MonoBehaviour:
   radiusLimitCenterPoint: {fileID: 8846971461258388476}
   maxGrabDistance: 6
   grabPositionOffset: -1
-  moveSpeed: 5
+  moveSpeed: 8
   toRestPointSpeed: 5
   handRotationSpeed: 2
   timeToRest: 2

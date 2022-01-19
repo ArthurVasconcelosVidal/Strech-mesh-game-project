@@ -120,6 +120,7 @@ public class BackHandBehaviour : MonoBehaviour {
         }
     }
 
+
     IEnumerator MoveToTargetPoint(){
         while (aimPoint.transform.position != targetPoint && handGrabState == HandGrabState.tryingToGrab){
             aimPoint.transform.position = Vector3.Lerp(aimPoint.transform.position, targetPoint, moveSpeed * Time.fixedDeltaTime);
