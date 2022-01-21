@@ -23,8 +23,8 @@
  
 ## Youtube Video
 
-[![PlaceHolder](http://img.youtube.com/vi/CCIfc7-5HRg/0.jpg)](https://youtu.be/CCIfc7-5HRg "PLACE HOLDER")
-- Link: PLACE HOLDER
+[![PlaceHolder](http://img.youtube.com/vi/RgJWk9S_ARs/0.jpg)](https://www.youtube.com/watch?v=RgJWk9S_ARs "Stretch mesh game prototype")
+- Link: https://www.youtube.com/watch?v=RgJWk9S_ARs
 
 ## Agradecimentos especiais / Special thanks
 - bzgeb (Distortion standard shader):
